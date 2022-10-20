@@ -1,4 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:wght@300;500&family=Rubik:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0; }
+
+.bodyCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .bodyCont hr {
+    width: 90%;
+    color: #B2B2B2; }
+
+header {
+  width: 100%;
+  height: 49px;
+  display: flex;
+  justify-content: center; }
+  header .headerCont {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header .headerCont .brand {
+      display: flex;
+      align-items: center; }
+      header .headerCont .brand a {
+        color: #033FFF;
+        text-decoration: none;
+        font-family: 'Bree Serif';
+        font-weight: 400;
+        font-size: 25px; }
+    header .headerCont .navbar {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center; }
+      header .headerCont .navbar a {
+        color: #B2B2B2;
+        text-decoration: none;
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 17px; }
+        header .headerCont .navbar a:hover {
+          color: #3C4048; }
+  header .searchCont {
+    display: flex;
+    align-items: center; }
+    header .searchCont input {
+      color: #B2B2B2;
+      font-family: 'Poppins';
+      font-weight: 300;
+      font-size: 12px;
+      border-color: #B2B2B2;
+      border-radius: 3px;
+      border-style: solid;
+      border-width: 1px; }

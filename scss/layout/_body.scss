@@ -2,3 +2,12 @@
     margin: 0;
     padding: 0;
 }
+.bodyCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    hr{
+        width: 90%;
+        color: #B2B2B2;
+    }
+}
