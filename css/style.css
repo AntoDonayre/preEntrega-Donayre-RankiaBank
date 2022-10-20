@@ -42,12 +42,17 @@ header {
         text-decoration: none;
         font-family: 'Poppins';
         font-weight: 300;
-        font-size: 17px; }
+        font-size: 17px;
+        transition: 0.2s; }
         header .headerCont .navbar a:hover {
           color: #3C4048; }
   header .searchCont {
+    width: 178px;
     display: flex;
+    justify-content: space-between;
     align-items: center; }
+    header .searchCont .fa-solid {
+      color: #B2B2B2; }
     header .searchCont input {
       color: #B2B2B2;
       font-family: 'Poppins';
@@ -75,7 +80,7 @@ main {
       width: 100%;
       height: 90vh; }
       main .mainCont .colorDesign .leftCont {
-        width: 50%;
+        width: 51%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -87,7 +92,7 @@ main {
             color: #3C4048;
             font-family: 'Poppins';
             font-weight: 700;
-            font-size: 58px; }
+            font-size: 65px; }
             main .mainCont .colorDesign .leftCont .slogan h3 span {
               color: #033FFF; }
         main .mainCont .colorDesign .leftCont .client {
@@ -117,25 +122,33 @@ main {
               border-radius: 5px;
               border-style: solid;
               border-color: #033FFF;
-              font-family: 'Poppins';
-              font-weight: 500;
-              font-size: 13px;
-              color: #033FFF;
               transition: 0.2s; }
               main .mainCont .colorDesign .leftCont .client div button:hover {
                 transform: scale(0.9); }
               main .mainCont .colorDesign .leftCont .client div button:active {
                 border-color: #3C4048;
                 color: #3C4048; }
+              main .mainCont .colorDesign .leftCont .client div button a {
+                text-decoration: none;
+                color: #033FFF;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 13px; }
+                main .mainCont .colorDesign .leftCont .client div button a:active {
+                  border-color: #3C4048;
+                  color: #3C4048; }
       main .mainCont .colorDesign .rigthCont {
-        width: 40%;
+        width: 46%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: flex-end; }
         main .mainCont .colorDesign .rigthCont img {
-          width: 539px;
-          z-index: 1; }
+          width: 620px;
+          z-index: 1;
+          transition: 0.2s; }
+          main .mainCont .colorDesign .rigthCont img:hover {
+            transform: rotate(10deg); }
         main .mainCont .colorDesign .rigthCont .backCardTarget {
           position: absolute;
           right: 0px;

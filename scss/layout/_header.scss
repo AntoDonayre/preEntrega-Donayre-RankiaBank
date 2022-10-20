@@ -31,6 +31,7 @@ header{
                 font-family: 'Poppins';
                 font-weight: 300;
                 font-size: 17px;
+                transition: 0.2s;
                 &:hover{
                     color: #3C4048;
                 }
@@ -38,8 +39,13 @@ header{
         }
     }
     .searchCont{
-            display: flex;
-            align-items: center;
+        width: 178px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .fa-solid{
+            color: #B2B2B2;
+        }
         input{
             color: #B2B2B2;
             font-family: 'Poppins';
