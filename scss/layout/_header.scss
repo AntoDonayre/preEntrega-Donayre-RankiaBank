@@ -49,6 +49,9 @@ header{
             border-radius: 3px;
             border-style: solid;
             border-width: 1px;
+            &:hover{
+                border-color: #033FFF;
+            }
         }
     }
 }

@@ -57,6 +57,8 @@ header {
       border-radius: 3px;
       border-style: solid;
       border-width: 1px; }
+      header .searchCont input:hover {
+        border-color: #033FFF; }
 
 main {
   width: 100%;
@@ -85,18 +87,60 @@ main {
             color: #3C4048;
             font-family: 'Poppins';
             font-weight: 700;
-            font-size: 50px; }
+            font-size: 58px; }
             main .mainCont .colorDesign .leftCont .slogan h3 span {
               color: #033FFF; }
         main .mainCont .colorDesign .leftCont .client {
           width: 100%;
           display: flex;
           flex-direction: row;
+          justify-content: space-evenly;
           align-items: center; }
           main .mainCont .colorDesign .leftCont .client img {
-            width: 200px; }
+            width: 235px; }
+          main .mainCont .colorDesign .leftCont .client div {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start; }
+            main .mainCont .colorDesign .leftCont .client div p {
+              font-family: 'Poppins';
+              font-weight: 300;
+              font-size: 15px;
+              color: #3C4048; }
+            main .mainCont .colorDesign .leftCont .client div button {
+              width: 132px;
+              height: 47px;
+              background-color: none;
+              border-radius: 5px;
+              border-style: solid;
+              border-color: #033FFF;
+              font-family: 'Poppins';
+              font-weight: 500;
+              font-size: 13px;
+              color: #033FFF;
+              transition: 0.2s; }
+              main .mainCont .colorDesign .leftCont .client div button:hover {
+                transform: scale(0.9); }
+              main .mainCont .colorDesign .leftCont .client div button:active {
+                border-color: #3C4048;
+                color: #3C4048; }
       main .mainCont .colorDesign .rigthCont {
-        width: 50%;
+        width: 40%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center; }
+        main .mainCont .colorDesign .rigthCont img {
+          width: 539px;
+          z-index: 1; }
+        main .mainCont .colorDesign .rigthCont .backCardTarget {
+          position: absolute;
+          right: 0px;
+          top: 365px;
+          width: 73%;
+          height: 40%;
+          z-index: -1;
+          background-color: rgba(0, 46, 148, 0.09); }
