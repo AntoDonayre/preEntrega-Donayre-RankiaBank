@@ -158,6 +158,7 @@ main {
             transform: rotate(10deg); }
         main .mainCont .main1 .rigthCont .backCardTarget {
           position: absolute;
+          border-radius: 15px 0px 0px 15px;
           right: 0px;
           top: 365px;
           width: 73%;
@@ -180,6 +181,7 @@ main {
           z-index: 1; }
         main .mainCont .main2 .leftCont2 .backCardTarget2 {
           position: absolute;
+          border-radius: 0px 15px 15px 0px;
           left: 0px;
           z-index: -1;
           width: 20%;
@@ -219,3 +221,58 @@ main {
             font-family: 'Poppins';
             font-weight: 300;
             font-size: 18px; }
+    main .mainCont .main3 {
+      width: 100%;
+      height: 50vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      main .mainCont .main3 .main3Cont {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; }
+        main .mainCont .main3 .main3Cont h4 {
+          font-family: 'Poppins';
+          font-weight: 700;
+          font-size: 45px;
+          color: #3C4048; }
+          main .mainCont .main3 .main3Cont h4 span {
+            color: #033FFF; }
+        main .mainCont .main3 .main3Cont section {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly; }
+          main .mainCont .main3 .main3Cont section div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 240px;
+            height: 160px;
+            border-radius: 13px;
+            background-color: #033FFF;
+            transition: 0.2s; }
+            main .mainCont .main3 .main3Cont section div a {
+              height: 70%;
+              text-decoration: none;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly; }
+              main .mainCont .main3 .main3Cont section div a .fa-solid {
+                color: white; }
+              main .mainCont .main3 .main3Cont section div a h6 {
+                font-family: 'Poppins';
+                font-weight: 300;
+                font-size: 20px;
+                text-align: center;
+                color: white; }
+            main .mainCont .main3 .main3Cont section div:hover {
+              transform: scale(0.9); }
+            main .mainCont .main3 .main3Cont section div:active {
+              background-color: #3C4048; }
