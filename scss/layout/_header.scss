@@ -33,6 +33,9 @@ header{
                 font-size: 17px;
                 transition: 0.2s;
                 &:hover{
+                    color: #033FFF;
+                }
+                &:active{
                     color: #3C4048;
                 }
             }
@@ -45,6 +48,13 @@ header{
         align-items: center;
         .fa-solid{
             color: #B2B2B2;
+            transition: 0.2s;
+            &:hover{
+                color: #033FFF;
+            }
+            &:active{
+                color: #3C4048;
+            }
         }
         input{
             color: #B2B2B2;

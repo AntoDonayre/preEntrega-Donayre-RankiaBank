@@ -45,6 +45,8 @@ header {
         font-size: 17px;
         transition: 0.2s; }
         header .headerCont .navbar a:hover {
+          color: #033FFF; }
+        header .headerCont .navbar a:active {
           color: #3C4048; }
   header .searchCont {
     width: 178px;
@@ -52,7 +54,12 @@ header {
     justify-content: space-between;
     align-items: center; }
     header .searchCont .fa-solid {
-      color: #B2B2B2; }
+      color: #B2B2B2;
+      transition: 0.2s; }
+      header .searchCont .fa-solid:hover {
+        color: #033FFF; }
+      header .searchCont .fa-solid:active {
+        color: #3C4048; }
     header .searchCont input {
       color: #B2B2B2;
       font-family: 'Poppins';
@@ -73,49 +80,49 @@ main {
   main .mainCont {
     width: 90%;
     height: auto; }
-    main .mainCont .colorDesign {
+    main .mainCont .main1 {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-      height: 90vh; }
-      main .mainCont .colorDesign .leftCont {
+      height: 85vh; }
+      main .mainCont .main1 .leftCont {
         width: 51%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center; }
-        main .mainCont .colorDesign .leftCont .slogan {
+        main .mainCont .main1 .leftCont .slogan {
           width: 100%;
           margin-bottom: 45px; }
-          main .mainCont .colorDesign .leftCont .slogan h3 {
+          main .mainCont .main1 .leftCont .slogan h3 {
             color: #3C4048;
             font-family: 'Poppins';
             font-weight: 700;
             font-size: 65px; }
-            main .mainCont .colorDesign .leftCont .slogan h3 span {
+            main .mainCont .main1 .leftCont .slogan h3 span {
               color: #033FFF; }
-        main .mainCont .colorDesign .leftCont .client {
+        main .mainCont .main1 .leftCont .client {
           width: 100%;
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
           align-items: center; }
-          main .mainCont .colorDesign .leftCont .client img {
+          main .mainCont .main1 .leftCont .client img {
             width: 235px; }
-          main .mainCont .colorDesign .leftCont .client div {
+          main .mainCont .main1 .leftCont .client div {
             width: 50%;
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: flex-start; }
-            main .mainCont .colorDesign .leftCont .client div p {
+            main .mainCont .main1 .leftCont .client div p {
               font-family: 'Poppins';
               font-weight: 300;
               font-size: 15px;
               color: #3C4048; }
-            main .mainCont .colorDesign .leftCont .client div button {
+            main .mainCont .main1 .leftCont .client div button {
               width: 132px;
               height: 47px;
               background-color: none;
@@ -123,33 +130,33 @@ main {
               border-style: solid;
               border-color: #033FFF;
               transition: 0.2s; }
-              main .mainCont .colorDesign .leftCont .client div button:hover {
+              main .mainCont .main1 .leftCont .client div button:hover {
                 transform: scale(0.9); }
-              main .mainCont .colorDesign .leftCont .client div button:active {
+              main .mainCont .main1 .leftCont .client div button:active {
                 border-color: #3C4048;
                 color: #3C4048; }
-              main .mainCont .colorDesign .leftCont .client div button a {
+              main .mainCont .main1 .leftCont .client div button a {
                 text-decoration: none;
                 color: #033FFF;
                 font-family: 'Poppins';
                 font-weight: 500;
                 font-size: 13px; }
-                main .mainCont .colorDesign .leftCont .client div button a:active {
+                main .mainCont .main1 .leftCont .client div button a:active {
                   border-color: #3C4048;
                   color: #3C4048; }
-      main .mainCont .colorDesign .rigthCont {
+      main .mainCont .main1 .rigthCont {
         width: 46%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-end; }
-        main .mainCont .colorDesign .rigthCont img {
+        main .mainCont .main1 .rigthCont img {
           width: 620px;
           z-index: 1;
           transition: 0.2s; }
-          main .mainCont .colorDesign .rigthCont img:hover {
+          main .mainCont .main1 .rigthCont img:hover {
             transform: rotate(10deg); }
-        main .mainCont .colorDesign .rigthCont .backCardTarget {
+        main .mainCont .main1 .rigthCont .backCardTarget {
           position: absolute;
           right: 0px;
           top: 365px;
@@ -157,3 +164,58 @@ main {
           height: 40%;
           z-index: -1;
           background-color: rgba(0, 46, 148, 0.09); }
+    main .mainCont .main2 {
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      flex-direction: row; }
+      main .mainCont .main2 .leftCont2 {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start; }
+        main .mainCont .main2 .leftCont2 img {
+          width: 310px;
+          z-index: 1; }
+        main .mainCont .main2 .leftCont2 .backCardTarget2 {
+          position: absolute;
+          left: 0px;
+          z-index: -1;
+          width: 20%;
+          height: 75%;
+          background-color: #033FFF; }
+      main .mainCont .main2 .rigthCont2 {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        main .mainCont .main2 .rigthCont2 .slogan2 {
+          font-family: 'Poppins';
+          font-weight: 700;
+          font-size: 45px;
+          color: #3C4048; }
+          main .mainCont .main2 .rigthCont2 .slogan2 span {
+            color: #033FFF; }
+        main .mainCont .main2 .rigthCont2 p {
+          font-family: 'Poppins';
+          font-weight: 300;
+          font-size: 25px; }
+        main .mainCont .main2 .rigthCont2 button {
+          width: 300px;
+          height: 55px;
+          border-radius: 5px;
+          background-color: #033FFF;
+          border-style: none;
+          transition: 0.2s; }
+          main .mainCont .main2 .rigthCont2 button:hover {
+            transform: scale(0.9); }
+          main .mainCont .main2 .rigthCont2 button:active {
+            background-color: #3C4048;
+            color: white; }
+          main .mainCont .main2 .rigthCont2 button a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 18px; }
