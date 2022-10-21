@@ -37,26 +37,18 @@
                             <h4>Rellena los siguientes datos:</h4>
                             <!-- JS -->
                             <form action="" method="get" id="inputForm">
-                                <label>Tipo de moneda</label> <br>
-                                <input class="stdOddJs" type="text" name="" id="tipoMoneda"> <br>
-                                <label>Monto total del préstamo</label> <br>
-                                <input class="stdOddJs" type="number" name="" id="montoPrestamo"> <br>
-                                <label>N° de cuotas</label> <br>
-                                <input class="stdOddJs" type="number" name="" id="cuotasCliente"> <br>
-                                <label>Tasa de interés anual (TEA)</label> <br>
-                                <input class="stdOddJs" type="number" name="" id="interesAnual"> <br>
+                                <input class="stdOddJs" type="text" name="" id="tipoMoneda" placeholder="Tipo de moneda"> <br><br>
+                                <input class="stdOddJs" type="number" name="" id="montoPrestamo" placeholder="Monto total del préstamo"> <br><br>
+                                <input class="stdOddJs" type="number" name="" id="cuotasCliente" placeholder="N° de cuotas"> <br><br>
+                                <input class="stdOddJs" type="number" name="" id="interesAnual" placeholder="Tasa de interés anual"> <br><br>
+                                <button type="submit" form="inputForm" value="submit" onclick="captura()">Enviar</button>
                             </form>
                             <!-- JS -->
-                            <div class="buttonCont">
-                                <button type="submit" form="inputForm" value="submit">Enviar</button>
-                                <button type="reset" form="inputForm" value="reset">Limpiar</button>
-                            </div>
-                            
                         </div>
                         <div class="rigthContSect">
                             <h4>Tu cuota mensual seria:</h4>
                             <!-- JS -->
-                            <div class="resultOddJs" id="resultadoCoutaMensual"></div>
+                            <div class="resultOddJs"><p>S/<span id="resultadoCoutaMensual"></span></p></div>
                             <!-- JS -->
                             <p>Recuerda que el resultado es un referencial aproximado.</p>
                         </div>

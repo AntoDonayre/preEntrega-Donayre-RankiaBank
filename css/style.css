@@ -327,18 +327,17 @@ main {
             font-weight: 500;
             font-size: 25px;
             text-align: center; }
-          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form label {
-            font-family: 'Poppins';
-            font-weight: 300;
-            font-size: 16px; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form input {
             width: 360px;
-            height: 22px;
+            height: 25px;
             border-radius: 5px;
             border-style: solid;
             border-width: 1px;
-            border-color: #033FFF; }
-          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect .buttonCont button {
+            border-color: #033FFF;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 15px; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect button {
             width: 180px;
             height: 36px;
             border-radius: 5px;
@@ -349,9 +348,9 @@ main {
             font-weight: 300;
             font-size: 15px;
             transition: 0.2s; }
-            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect .buttonCont button:hover {
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect button:hover {
               transform: scale(0.9); }
-            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect .buttonCont button:active {
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect button:active {
               background-color: #3C4048; }
         main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
           width: 550px;
@@ -385,6 +384,13 @@ main {
               font-weight: 500;
               font-size: 45px;
               color: #3C4048; }
+              main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs p span {
+                width: auto;
+                height: auto;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 45px;
+                color: #3C4048; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect p {
             font-family: 'Poppins';
             font-weight: 300;
