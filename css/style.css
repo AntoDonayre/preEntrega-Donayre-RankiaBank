@@ -282,16 +282,44 @@ main {
               background-color: #3C4048; }
   main .simulatorMainCont {
     width: 90%;
-    height: 90vh; }
+    height: auto; }
     main .simulatorMainCont .prestamoInmediato {
       width: 100%;
-      height: 458px;
-      background-image: url(/img/yellowMoneyIn.jpg);
+      height: 420px;
+      background-image: url(/img/papaYbebe.webp);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position-y: -82px;
+      background-position-y: -300px;
       background-position-x: center;
       border-radius: 0px 0px 18px 18px; }
+    main .simulatorMainCont .simulatordownerCont {
+      width: 100%;
+      height: auto; }
+      main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 45px;
+        text-align: center;
+        color: #3C4048; }
+      main .simulatorMainCont .simulatordownerCont .oddDescripction p {
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+        color: #3C4048; }
+      main .simulatorMainCont .simulatordownerCont .lowContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly; }
+        main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+          width: 200px;
+          height: 200px;
+          background-color: #3C4048; }
+        main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+          width: 550px;
+          height: 560px;
+          border-radius: 15px;
+          background-color: rgba(3, 63, 255, 0.09); }
 
 footer {
   width: 100%;
