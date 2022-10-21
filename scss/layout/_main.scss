@@ -244,4 +244,19 @@ main{
             }
         }
     }
+    //SIMULATOR
+    .simulatorMainCont{
+        width: 90%;
+        height: 90vh;
+        .prestamoInmediato{
+            width: 100%;
+            height: 458px;
+            background-image: url(/img/yellowMoneyIn.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -82px;
+            background-position-x: center;
+            border-radius: 0px 0px 18px 18px;
+        }
+    }
 }
