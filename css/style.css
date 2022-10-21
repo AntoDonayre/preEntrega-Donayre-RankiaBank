@@ -379,18 +379,13 @@ main {
             display: flex;
             justify-content: center;
             align-items: center; }
-            main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs p {
+            main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs span {
+              width: auto;
+              height: auto;
               font-family: 'Poppins';
               font-weight: 500;
               font-size: 45px;
               color: #3C4048; }
-              main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs p span {
-                width: auto;
-                height: auto;
-                font-family: 'Poppins';
-                font-weight: 500;
-                font-size: 45px;
-                color: #3C4048; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect p {
             font-family: 'Poppins';
             font-weight: 300;

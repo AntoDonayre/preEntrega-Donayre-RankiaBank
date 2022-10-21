@@ -1,4 +1,6 @@
-function captura(){
+const inputForm = document.getElementById("inputForm")
+inputForm.addEventListener("submit", (e) => {
+    e.preventDefault()
     const tipoMoneda=document.getElementById("tipoMoneda").value;
     const montoPrestamo=Number(document.getElementById("montoPrestamo").value);
     const cuotasCliente=Number(document.getElementById("cuotasCliente").value);
@@ -10,29 +12,13 @@ function captura(){
     let deudaTotal = resulCuotas+montoPrestamo
     let cuotaMensual = Math.round(deudaTotal/cuotasCliente)
 
-    document.getElementById('resultadoCoutaMensual').innerHTML = cuotaMensual;
-
-    // if (tipoMoneda==""){
-    //     alert("Porfavor digite el tipo de moneda");
-    //     document.getElementById("tipoMoneda").focus();
-    // }else if (montoPrestamo==""){
-    //     alert("Porfavor digite el monto total del préstamo solicitado");
-    //         document.getElementById("montoPrestamo").focus();
-    // }else if (cuotasCliente==""){
-    //     alert("Porfavor digite un número de cuotas válido");
-    //         document.getElementById("cuotasCliente").focus();
-    // }else if (interesAnual==""){
-    //     alert("Porfavor digite un número de cuotas válido");
-    //         document.getElementById("interesAnual").focus();
-    // }else{
-    //     console.log(tipoMoneda);
-    //     console.log(montoPrestamo);
-    //     console.log(cuotasCliente);
-    //     console.log(interesAnual);
-    //     document.getElementById("tipoMoneda").value="";
-    //     document.getElementById("montoPrestamo").value="";
-    //     document.getElementById("cuotasCliente").value="";
-    //     document.getElementById("cuotasCliente").value="";
-    //     document.getElementById("tipoMoneda").focus();
-    // }
-}
+    if(tipoMoneda.toLowerCase() =="soles"){
+            console.log("s/"+cuotaMensual)
+            document.getElementById("resultadoCoutaMensual").innerHTML="s/" + cuotaMensual
+            // document.write("<h2 class='simple-resul'>" + "S/" + cuotaMensual + "</h2>")
+        } else if(tipoMoneda.toLowerCase() == "dolares"){
+            console.log("$"+cuotaMensual)
+            document.getElementById("resultadoCoutaMensual").innerHTML="$" + cuotaMensual
+            // document.write("<h2 class='simple-resul'>" + "$" + cuotaMensual + "</h2>")
+        }
+} )

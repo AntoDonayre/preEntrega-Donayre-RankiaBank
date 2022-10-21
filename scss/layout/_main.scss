@@ -360,19 +360,13 @@ main{
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        p{
+                        span{
+                            width: auto;
+                            height: auto;
                             font-family: 'Poppins';
                             font-weight: 500;
                             font-size: 45px;
                             color: #3C4048;
-                            span{
-                                width: auto;
-                                height: auto;
-                                font-family: 'Poppins';
-                                font-weight: 500;
-                                font-size: 45px;
-                                color: #3C4048;
-                            }
                         }
                     }
                     //Resultado JS
