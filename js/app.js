@@ -15,10 +15,8 @@ inputForm.addEventListener("submit", (e) => {
     if(tipoMoneda.toLowerCase() =="soles"){
             console.log("s/"+cuotaMensual)
             document.getElementById("resultadoCoutaMensual").innerHTML="s/" + cuotaMensual
-            // document.write("<h2 class='simple-resul'>" + "S/" + cuotaMensual + "</h2>")
         } else if(tipoMoneda.toLowerCase() == "dolares"){
             console.log("$"+cuotaMensual)
             document.getElementById("resultadoCoutaMensual").innerHTML="$" + cuotaMensual
-            // document.write("<h2 class='simple-resul'>" + "$" + cuotaMensual + "</h2>")
-        }
-} )
+        } 
+})

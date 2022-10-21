@@ -37,11 +37,24 @@
                             <h4>Rellena los siguientes datos:</h4>
                             <!-- JS -->
                             <form action="" method="get" id="inputForm">
-                                <input class="stdOddJs" type="text" name="" id="tipoMoneda" placeholder="Tipo de moneda"> <br><br>
-                                <input class="stdOddJs" type="number" name="" id="montoPrestamo" placeholder="Monto total del préstamo"> <br><br>
-                                <input class="stdOddJs" type="number" name="" id="cuotasCliente" placeholder="N° de cuotas"> <br><br>
-                                <input class="stdOddJs" type="number" name="" id="interesAnual" placeholder="Tasa de interés anual"> <br><br>
-                                <button type="submit" form="inputForm" value="submit" id="btn">Enviar</button>
+                                <select class="stdOddJs" name="" id="tipoMoneda">
+                                    <option value="" disabled="disabled"></option>
+                                    <option value="">---</option>
+                                    <option value="soles">Soles peruanos</option>
+                                    <option value="dolares">Dólares americanos</option>
+                                </select><br><br>
+                                <input class="stdOddJs" type="number" name="" id="montoPrestamo" placeholder=" Monto total del préstamo"> <br><br>
+                                <input class="stdOddJs" type="number" name="" id="cuotasCliente" placeholder=" N° de cuotas"> <br><br>
+                                <div class="oddCont">
+                                    <input class="stdOddJs2" type="number" name="" id="interesAnual" placeholder=" Tasa de interés anual">
+                                    <p>%</p>
+                                </div>
+                                <br><br>
+                                <div>
+                                    <button type="submit" form="inputForm" value="submit" id="btn">Enviar</button>
+                                    <button type="reset" value="reset">Limpiar</button>
+                                </div>
+                                
                             </form>
                             <!-- JS -->
                         </div>

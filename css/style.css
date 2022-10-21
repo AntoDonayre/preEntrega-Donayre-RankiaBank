@@ -327,18 +327,48 @@ main {
             font-weight: 500;
             font-size: 25px;
             text-align: center; }
-          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form input {
-            width: 360px;
-            height: 25px;
-            border-radius: 5px;
-            border-style: solid;
-            border-width: 1px;
-            border-color: #033FFF;
-            font-family: 'Poppins';
-            font-weight: 300;
-            font-size: 15px; }
-          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect button {
-            width: 180px;
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .stdOddJs {
+              width: 360px;
+              height: 30px;
+              border-radius: 5px;
+              border-style: solid;
+              border-width: 1px;
+              border-color: #033FFF;
+              font-family: 'Poppins';
+              font-weight: 300;
+              font-size: 15px; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont {
+              display: flex;
+              flex-direction: row;
+              justify-items: center;
+              align-items: center;
+              width: 360px;
+              height: 30px;
+              border-radius: 5px;
+              border-style: solid;
+              border-width: 1px;
+              border-color: #033FFF; }
+              main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont .stdOddJs2 {
+                width: 90%;
+                height: 100%;
+                border-radius: 5px 0px 0px 5px;
+                border-style: none;
+                font-family: 'Poppins';
+                font-weight: 300;
+                font-size: 15px; }
+              main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont p {
+                text-align: center;
+                width: 10%;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 15px; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button {
+            width: 170px;
             height: 36px;
             border-radius: 5px;
             border-style: none;
@@ -348,9 +378,9 @@ main {
             font-weight: 300;
             font-size: 15px;
             transition: 0.2s; }
-            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect button:hover {
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button:hover {
               transform: scale(0.9); }
-            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect button:active {
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button:active {
               background-color: #3C4048; }
         main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
           width: 550px;
