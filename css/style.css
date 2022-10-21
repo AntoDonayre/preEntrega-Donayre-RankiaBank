@@ -16,7 +16,11 @@ header {
   width: 100%;
   height: 49px;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 1; }
   header .headerCont {
     width: 90%;
     height: 100%;
@@ -85,7 +89,7 @@ main {
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
-      height: 85vh; }
+      height: 80vh; }
       main .mainCont .main1 .leftCont {
         width: 51%;
         display: flex;
@@ -152,7 +156,7 @@ main {
         align-items: flex-end; }
         main .mainCont .main1 .rigthCont img {
           width: 620px;
-          z-index: 1;
+          z-index: 2;
           transition: 0.2s; }
           main .mainCont .main1 .rigthCont img:hover {
             transform: rotate(10deg); }
@@ -178,7 +182,7 @@ main {
         align-items: flex-start; }
         main .mainCont .main2 .leftCont2 img {
           width: 310px;
-          z-index: 1; }
+          z-index: 2; }
         main .mainCont .main2 .leftCont2 .backCardTarget2 {
           position: absolute;
           border-radius: 0px 15px 15px 0px;
@@ -276,3 +280,47 @@ main {
               transform: scale(0.9); }
             main .mainCont .main3 .main3Cont section div:active {
               background-color: #3C4048; }
+
+footer {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center; }
+  footer .footerCont {
+    padding-top: 18px;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer .footerCont .columnsFoot {
+      width: 33%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer .footerCont .columnsFoot h5 {
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 25px;
+        color: #3C4048; }
+      footer .footerCont .columnsFoot a {
+        margin: 12px;
+        text-decoration: none;
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 17px; }
+      footer .footerCont .columnsFoot .ColumnCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      footer .footerCont .columnsFoot .ColumnContRedes {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      footer .footerCont .columnsFoot .ColumnContApp {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }

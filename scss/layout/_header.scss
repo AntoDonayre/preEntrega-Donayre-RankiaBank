@@ -3,6 +3,10 @@ header{
     height: 49px;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
     .headerCont{
         width: 90%;
         height: 100%;
