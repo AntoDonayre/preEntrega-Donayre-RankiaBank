@@ -22,7 +22,11 @@ footer{
                 font-family: 'Poppins';
                 font-weight: 500;
                 font-size: 25px;
-                color: #3C4048;
+                color: $grease;
+                transition: .2s;
+                body.dark & {
+                    color: $white;
+                }
             }
             a{
                 margin: 12px;
@@ -31,11 +35,18 @@ footer{
                 font-weight: 300;
                 font-size: 17px;
                 transition: 0.2s;
+                color: $grease;
+                body.dark & {
+                    color: $white;
+                    &:hover{
+                        color: $lighMode;
+                    }
+                }
                 &:hover{
-                    color: #033FFF;
+                    color: $blue;
                 }
                 &:active{
-                    color: rgba(0, 46, 148, 0.6);
+                    color: $lightBlue;
                 }
             }
             .ColumnCont{
@@ -44,13 +55,13 @@ footer{
                 align-items: center;
                 margin-bottom: 25px;
                 a{
-                    color: #3C4048;
+                    color: $grease;
                     transition: 0.2s;
                     &:hover{
-                        color: #033FFF;
+                        color: $blue;
                     }
                     &:active{
-                        color: rgba(0, 46, 148, 0.6);
+                        color: $lightBlue;
                     }
                 }
             }
@@ -61,13 +72,19 @@ footer{
                 margin-bottom: 25px;
                 div{
                     a{
-                        color: #3C4048;
+                        color: $grease;
                         transition: 0.2s;
+                        body.dark & {
+                            color: $white;
+                            &:hover{
+                                color: $lighMode;
+                            }
+                        }
                         &:hover{
-                            color: #033FFF;
+                            color: $blue;
                         }
                         &:active{
-                            color: rgba(0, 46, 148, 0.6);
+                            color: $lightBlue;
                         }
                     }
                 }
@@ -78,13 +95,19 @@ footer{
                 align-items: center;
                 div{
                     a{
-                        color: #3C4048;
+                        color: $grease;
                         transition: 0.2s;
+                        body.dark & {
+                            color: $white;
+                            &:hover{
+                                color: $lighMode;
+                            }
+                        }
                         &:hover{
-                            color: #033FFF;
+                            color: $blue;
                         }
                         &:active{
-                            color: rgba(0, 46, 148, 0.6);
+                            color: $lightBlue;
                         }
                     }
                 }

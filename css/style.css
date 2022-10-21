@@ -3,14 +3,18 @@
   margin: 0;
   padding: 0; }
 
-.bodyCont {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .bodyCont hr {
-    width: 90%;
-    border-style: solid;
-    border-color: #B2B2B2; }
+body {
+  transition: 0.2s; }
+  body.dark {
+    background-color: #3C4048; }
+  body .bodyCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .bodyCont hr {
+      width: 90%;
+      border-style: solid;
+      border-color: #B2B2B2; }
 
 header {
   width: 100%;
@@ -20,13 +24,17 @@ header {
   position: sticky;
   top: 0px;
   background-color: white;
-  z-index: 1; }
+  z-index: 1;
+  transition: .2s; }
+  body.dark header {
+    background-color: #3C4048; }
   header .headerCont {
     width: 90%;
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     header .headerCont .brand {
       display: flex;
       align-items: center; }
@@ -35,7 +43,10 @@ header {
         text-decoration: none;
         font-family: 'Bree Serif';
         font-weight: 400;
-        font-size: 25px; }
+        font-size: 25px;
+        transition: .2s; }
+        body.dark header .headerCont .brand a {
+          color: #FFB200; }
     header .headerCont .navbar {
       width: 50%;
       display: flex;
@@ -52,6 +63,44 @@ header {
           color: #033FFF; }
         header .headerCont .navbar a:active {
           color: #3C4048; }
+        body.dark header .headerCont .navbar a {
+          color: white; }
+          body.dark header .headerCont .navbar a:hover {
+            color: #FFB200; }
+    header .headerCont .switchCont .switch {
+      background-color: #3C4048;
+      border-radius: 1000px;
+      border: none;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      outline: none; }
+      header .headerCont .switchCont .switch::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: white;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: 0.2s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2); }
+      header .headerCont .switchCont .switch.active {
+        background-color: #FFB200;
+        color: #3C4048; }
+        header .headerCont .switchCont .switch.active::after {
+          right: 0;
+          left: unset; }
+      header .headerCont .switchCont .switch span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: white; }
   header .searchCont {
     width: 178px;
     display: flex;
@@ -64,6 +113,10 @@ header {
         color: #033FFF; }
       header .searchCont .fa-solid:active {
         color: #3C4048; }
+      body.dark header .searchCont .fa-solid {
+        color: white; }
+        body.dark header .searchCont .fa-solid:hover {
+          color: #FFB200; }
     header .searchCont input {
       color: #B2B2B2;
       font-family: 'Poppins';
@@ -75,6 +128,12 @@ header {
       border-width: 1px; }
       header .searchCont input:hover {
         border-color: #033FFF; }
+      body.dark header .searchCont input {
+        border-color: none;
+        background-color: #3C4048;
+        color: white; }
+        body.dark header .searchCont input:hover {
+          border-color: #FFB200; }
 
 main {
   width: 100%;
@@ -103,9 +162,15 @@ main {
             color: #3C4048;
             font-family: 'Poppins';
             font-weight: 700;
-            font-size: 65px; }
+            font-size: 65px;
+            transition: .2s; }
+            body.dark main .mainCont .main1 .leftCont .slogan h3 {
+              color: white; }
             main .mainCont .main1 .leftCont .slogan h3 span {
-              color: #033FFF; }
+              color: #033FFF;
+              transition: .2s; }
+              body.dark main .mainCont .main1 .leftCont .slogan h3 span {
+                color: #FFB200; }
         main .mainCont .main1 .leftCont .client {
           width: 100%;
           display: flex;
@@ -126,26 +191,37 @@ main {
               font-family: 'Poppins';
               font-weight: 300;
               font-size: 15px;
-              color: #3C4048; }
+              color: #3C4048;
+              transition: .2s; }
+              body.dark main .mainCont .main1 .leftCont .client div p {
+                color: white; }
             main .mainCont .main1 .leftCont .client div button {
               width: 132px;
               height: 47px;
-              background-color: none;
+              background-color: transparent;
               border-radius: 5px;
               border-style: solid;
               border-color: #033FFF;
               transition: 0.2s; }
+              body.dark main .mainCont .main1 .leftCont .client div button {
+                border-color: white; }
               main .mainCont .main1 .leftCont .client div button:hover {
                 transform: scale(0.9); }
               main .mainCont .main1 .leftCont .client div button:active {
                 border-color: #3C4048;
-                color: #3C4048; }
+                color: #FFB200; }
               main .mainCont .main1 .leftCont .client div button a {
                 text-decoration: none;
                 color: #033FFF;
                 font-family: 'Poppins';
                 font-weight: 500;
-                font-size: 13px; }
+                font-size: 13px;
+                transition: .2s; }
+                body.dark main .mainCont .main1 .leftCont .client div button a {
+                  color: white; }
+                  body.dark main .mainCont .main1 .leftCont .client div button a:active {
+                    color: #FFB200;
+                    border-color: #FFB200; }
                 main .mainCont .main1 .leftCont .client div button a:active {
                   border-color: #3C4048;
                   color: #3C4048; }
@@ -169,7 +245,10 @@ main {
           width: 73%;
           height: 40%;
           z-index: -1;
-          background-color: rgba(0, 46, 148, 0.09); }
+          background-color: rgba(3, 63, 255, 0.09);
+          transition: .2s; }
+          body.dark main .mainCont .main1 .rigthCont .backCardTarget {
+            background-color: transparent; }
     main .mainCont .main2 {
       width: 100%;
       height: 70vh;
@@ -191,7 +270,10 @@ main {
           z-index: -1;
           width: 20%;
           height: 75%;
-          background-color: #033FFF; }
+          background-color: #033FFF;
+          transition: .2s; }
+          body.dark main .mainCont .main2 .leftCont2 .backCardTarget2 {
+            background-color: transparent; }
       main .mainCont .main2 .rigthCont2 {
         width: 65%;
         display: flex;
@@ -201,13 +283,23 @@ main {
           font-family: 'Poppins';
           font-weight: 700;
           font-size: 45px;
-          color: #3C4048; }
+          color: #3C4048;
+          transition: .2s; }
+          body.dark main .mainCont .main2 .rigthCont2 .slogan2 {
+            color: white; }
           main .mainCont .main2 .rigthCont2 .slogan2 span {
-            color: #033FFF; }
+            color: #033FFF;
+            transition: .2s; }
+            body.dark main .mainCont .main2 .rigthCont2 .slogan2 span {
+              color: #FFB200; }
         main .mainCont .main2 .rigthCont2 p {
           font-family: 'Poppins';
           font-weight: 300;
-          font-size: 25px; }
+          font-size: 25px;
+          color: #3C4048;
+          transition: .2s; }
+          body.dark main .mainCont .main2 .rigthCont2 p {
+            color: white; }
         main .mainCont .main2 .rigthCont2 button {
           width: 300px;
           height: 55px;
@@ -215,6 +307,8 @@ main {
           background-color: #033FFF;
           border-style: none;
           transition: 0.2s; }
+          body.dark main .mainCont .main2 .rigthCont2 button {
+            background-color: #FFB200; }
           main .mainCont .main2 .rigthCont2 button:hover {
             transform: scale(0.9); }
           main .mainCont .main2 .rigthCont2 button:active {
@@ -225,7 +319,11 @@ main {
             color: white;
             font-family: 'Poppins';
             font-weight: 300;
-            font-size: 18px; }
+            font-size: 18px;
+            transition: .2s; }
+            body.dark main .mainCont .main2 .rigthCont2 button a {
+              color: #3C4048;
+              font-weight: 500; }
     main .mainCont .main3 {
       width: 100%;
       height: 50vh;
@@ -244,9 +342,15 @@ main {
           font-family: 'Poppins';
           font-weight: 700;
           font-size: 45px;
-          color: #3C4048; }
+          color: #3C4048;
+          transition: .2s; }
+          body.dark main .mainCont .main3 .main3Cont h4 {
+            color: white; }
           main .mainCont .main3 .main3Cont h4 span {
-            color: #033FFF; }
+            color: #033FFF;
+            transition: .2s; }
+            body.dark main .mainCont .main3 .main3Cont h4 span {
+              color: #FFB200; }
         main .mainCont .main3 .main3Cont section {
           width: 100%;
           height: auto;
@@ -262,6 +366,8 @@ main {
             border-radius: 13px;
             background-color: #033FFF;
             transition: 0.2s; }
+            body.dark main .mainCont .main3 .main3Cont section div {
+              background-color: #FFB200; }
             main .mainCont .main3 .main3Cont section div a {
               height: 70%;
               text-decoration: none;
@@ -270,13 +376,20 @@ main {
               align-items: center;
               justify-content: space-evenly; }
               main .mainCont .main3 .main3Cont section div a .fa-solid {
-                color: white; }
+                color: white;
+                transition: .2s; }
+                body.dark main .mainCont .main3 .main3Cont section div a .fa-solid {
+                  color: #3C4048; }
               main .mainCont .main3 .main3Cont section div a h6 {
                 font-family: 'Poppins';
                 font-weight: 300;
                 font-size: 20px;
                 text-align: center;
-                color: white; }
+                color: white;
+                transition: .2s; }
+                body.dark main .mainCont .main3 .main3Cont section div a h6 {
+                  color: #3C4048;
+                  font-weight: 500; }
             main .mainCont .main3 .main3Cont section div:hover {
               transform: scale(0.9); }
             main .mainCont .main3 .main3Cont section div:active {
@@ -292,7 +405,11 @@ main {
       background-size: cover;
       background-position-y: -380px;
       background-position-x: center;
-      border-radius: 0px 0px 18px 18px; }
+      border-radius: 0px 0px 18px 18px;
+      transition: .2s; }
+      body.dark main .simulatorMainCont .prestamoInmediato {
+        background-image: url(/img/casaNueva.webp);
+        background-position-y: -255px; }
     main .simulatorMainCont .simulatordownerCont {
       width: 100%;
       height: 90vh; }
@@ -301,13 +418,19 @@ main {
         font-weight: 700;
         font-size: 45px;
         text-align: center;
-        color: #3C4048; }
+        color: #3C4048;
+        transition: .2s; }
+        body.dark main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
+          color: white; }
       main .simulatorMainCont .simulatordownerCont .oddDescripction p {
         font-family: 'Poppins';
         font-weight: 300;
         font-size: 18px;
         text-align: center;
-        color: #3C4048; }
+        color: #3C4048;
+        transition: .2s; }
+        body.dark main .simulatorMainCont .simulatordownerCont .oddDescripction p {
+          color: white; }
       main .simulatorMainCont .simulatordownerCont .lowContainer {
         width: 100%;
         display: flex;
@@ -321,12 +444,22 @@ main {
           display: flex;
           flex-direction: column;
           align-items: center;
-          justify-content: space-evenly; }
+          justify-content: space-evenly;
+          transition: .2s; }
+          body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+            background-color: transparent;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect h4 {
             font-family: 'Poppins';
             font-weight: 500;
             font-size: 25px;
-            text-align: center; }
+            text-align: center;
+            color: #3C4048;
+            transition: .2s; }
+            body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect h4 {
+              color: white; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form {
             display: flex;
             flex-direction: column;
@@ -341,7 +474,15 @@ main {
               border-color: #033FFF;
               font-family: 'Poppins';
               font-weight: 300;
-              font-size: 15px; }
+              font-size: 15px;
+              transition: .2s; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .stdOddJs {
+                border-color: white;
+                background-color: transparent;
+                color: white;
+                font-weight: 500; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .stdOddJs option {
+                background-color: #3C4048; }
             main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont {
               display: flex;
               flex-direction: row;
@@ -352,7 +493,10 @@ main {
               border-radius: 5px;
               border-style: solid;
               border-width: 1px;
-              border-color: #033FFF; }
+              border-color: #033FFF;
+              transition: .2s; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont {
+                border-color: white; }
               main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont .stdOddJs2 {
                 width: 90%;
                 height: 100%;
@@ -360,7 +504,13 @@ main {
                 border-style: none;
                 font-family: 'Poppins';
                 font-weight: 300;
-                font-size: 15px; }
+                font-size: 15px;
+                transition: .2s; }
+                body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont .stdOddJs2 {
+                  background-color: transparent;
+                  color: white;
+                  font-weight: 500;
+                  border-right: solid 1px white; }
               main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont p {
                 text-align: center;
                 width: 10%;
@@ -378,6 +528,10 @@ main {
             font-weight: 300;
             font-size: 15px;
             transition: 0.2s; }
+            body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button {
+              background-color: #FFB200;
+              color: #3C4048;
+              font-weight: 500; }
             main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button:hover {
               transform: scale(0.9); }
             main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button:active {
@@ -391,13 +545,22 @@ main {
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
-          align-items: center; }
+          align-items: center;
+          transition: .2s; }
+          body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+            background-color: transparent;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect h4 {
             font-family: 'Poppins';
             font-weight: 500;
             font-size: 25px;
             text-align: center;
-            color: #3C4048; }
+            color: #3C4048;
+            transition: .2s; }
+            body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect h4 {
+              color: white; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs {
             width: 80%;
             height: 40%;
@@ -408,18 +571,29 @@ main {
             border-width: 1px;
             display: flex;
             justify-content: center;
-            align-items: center; }
+            align-items: center;
+            transition: .2s; }
+            body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs {
+              background-color: transparent;
+              border-color: white; }
             main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs span {
               width: auto;
               height: auto;
               font-family: 'Poppins';
               font-weight: 500;
               font-size: 45px;
-              color: #3C4048; }
+              color: #3C4048;
+              transition: .2s; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs span {
+                color: white; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect p {
             font-family: 'Poppins';
             font-weight: 300;
-            font-size: 13px; }
+            font-size: 13px;
+            color: #3C4048;
+            transition: .2s; }
+            body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect p {
+              color: white; }
 
 footer {
   width: 100%;
@@ -445,18 +619,26 @@ footer {
         font-family: 'Poppins';
         font-weight: 500;
         font-size: 25px;
-        color: #3C4048; }
+        color: #3C4048;
+        transition: .2s; }
+        body.dark footer .footerCont .columnsFoot h5 {
+          color: white; }
       footer .footerCont .columnsFoot a {
         margin: 12px;
         text-decoration: none;
         font-family: 'Poppins';
         font-weight: 300;
         font-size: 17px;
-        transition: 0.2s; }
+        transition: 0.2s;
+        color: #3C4048; }
+        body.dark footer .footerCont .columnsFoot a {
+          color: white; }
+          body.dark footer .footerCont .columnsFoot a:hover {
+            color: #FFB200; }
         footer .footerCont .columnsFoot a:hover {
           color: #033FFF; }
         footer .footerCont .columnsFoot a:active {
-          color: rgba(0, 46, 148, 0.6); }
+          color: rgba(3, 63, 255, 0.09); }
       footer .footerCont .columnsFoot .ColumnCont {
         display: flex;
         flex-direction: column;
@@ -468,7 +650,7 @@ footer {
           footer .footerCont .columnsFoot .ColumnCont a:hover {
             color: #033FFF; }
           footer .footerCont .columnsFoot .ColumnCont a:active {
-            color: rgba(0, 46, 148, 0.6); }
+            color: rgba(3, 63, 255, 0.09); }
       footer .footerCont .columnsFoot .ColumnContRedes {
         display: flex;
         flex-direction: column;
@@ -477,10 +659,14 @@ footer {
         footer .footerCont .columnsFoot .ColumnContRedes div a {
           color: #3C4048;
           transition: 0.2s; }
+          body.dark footer .footerCont .columnsFoot .ColumnContRedes div a {
+            color: white; }
+            body.dark footer .footerCont .columnsFoot .ColumnContRedes div a:hover {
+              color: #FFB200; }
           footer .footerCont .columnsFoot .ColumnContRedes div a:hover {
             color: #033FFF; }
           footer .footerCont .columnsFoot .ColumnContRedes div a:active {
-            color: rgba(0, 46, 148, 0.6); }
+            color: rgba(3, 63, 255, 0.09); }
       footer .footerCont .columnsFoot .ColumnContApp {
         display: flex;
         flex-direction: column;
@@ -488,7 +674,11 @@ footer {
         footer .footerCont .columnsFoot .ColumnContApp div a {
           color: #3C4048;
           transition: 0.2s; }
+          body.dark footer .footerCont .columnsFoot .ColumnContApp div a {
+            color: white; }
+            body.dark footer .footerCont .columnsFoot .ColumnContApp div a:hover {
+              color: #FFB200; }
           footer .footerCont .columnsFoot .ColumnContApp div a:hover {
             color: #033FFF; }
           footer .footerCont .columnsFoot .ColumnContApp div a:active {
-            color: rgba(0, 46, 148, 0.6); }
+            color: rgba(3, 63, 255, 0.09); }

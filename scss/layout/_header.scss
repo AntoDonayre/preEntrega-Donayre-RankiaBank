@@ -5,23 +5,32 @@ header{
     justify-content: center;
     position: sticky;
     top: 0px;
-    background-color: white;
+    background-color: $white;
     z-index: 1;
+    transition: .2s;
+    body.dark & {
+        background-color: $grease;
+    }
     .headerCont{
         width: 90%;
         height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         .brand{
             display: flex;
             align-items: center;
             a{
-                color: #033FFF;
+                color: $blue;
                 text-decoration: none;
                 font-family: 'Bree Serif';
                 font-weight: 400;
                 font-size: 25px;
+                transition: .2s;
+                body.dark & {
+                    color: $lighMode;
+                }
             }
         }
         .navbar{
@@ -30,17 +39,64 @@ header{
             justify-content: space-evenly;
             align-items: center;
             a{
-                color: #B2B2B2;
+                color: $lightGrease;
                 text-decoration: none;
                 font-family: 'Poppins';
                 font-weight: 300;
                 font-size: 17px;
                 transition: 0.2s;
                 &:hover{
-                    color: #033FFF;
+                    color: $blue;
                 }
                 &:active{
-                    color: #3C4048;
+                    color: $grease;
+                }
+                body.dark & {
+                    color: $white;
+                    &:hover{
+                        color: $lighMode;
+                    }
+                }
+            }
+        }
+        .switchCont{
+            .switch{
+                background-color: $grease;
+                border-radius: 1000px;
+                border: none;
+                position: relative;
+                cursor: pointer;
+                display: flex;
+                outline: none;
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    background: $white;
+                    top: 0;
+                    left: 0;
+                    right: unset;
+                    border-radius: 100px;
+                    transition: 0.2s ease all;
+                    box-shadow: 0px 0px 2px 2px $shadow;
+                }
+                &.active{
+                    background-color: $lighMode;
+                    color: $grease;
+                    &::after{
+                        right: 0;
+                        left: unset;
+                    }
+                }
+                span{
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    display: block;
+                    background: none;
+                    color: $white;
                 }
             }
         }
@@ -51,26 +107,40 @@ header{
         justify-content: space-between;
         align-items: center;
         .fa-solid{
-            color: #B2B2B2;
+            color: $lightGrease;
             transition: 0.2s;
             &:hover{
-                color: #033FFF;
+                color: $blue;
             }
             &:active{
-                color: #3C4048;
+                color: $grease;
+            }
+            body.dark & {
+                color: $white;
+                &:hover{
+                    color: $lighMode;
+                }
             }
         }
         input{
-            color: #B2B2B2;
+            color: $lightGrease;
             font-family: 'Poppins';
             font-weight: 300;
             font-size: 12px;
-            border-color: #B2B2B2;
+            border-color: $lightGrease;
             border-radius: 3px;
             border-style: solid;
             border-width: 1px;
             &:hover{
-                border-color: #033FFF;
+                border-color: $blue;
+            }
+            body.dark & {
+                border-color: none;
+                background-color: $grease;
+                color: $white;
+                &:hover{
+                    border-color: $lighMode;
+                }
             }
         }
     }

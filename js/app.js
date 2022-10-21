@@ -1,3 +1,13 @@
+// Toggle light & darkmode
+
+const btnSwitch = document.querySelector('#switch');
+btnSwitch.addEventListener('click', () =>{
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+})
+
+// Simulador de cuotas
+
 const inputForm = document.getElementById("inputForm")
 inputForm.addEventListener("submit", (e) => {
     e.preventDefault()
@@ -13,10 +23,10 @@ inputForm.addEventListener("submit", (e) => {
     let cuotaMensual = Math.round(deudaTotal/cuotasCliente)
 
     if(tipoMoneda.toLowerCase() =="soles"){
-            console.log("s/"+cuotaMensual)
+            // console.log("s/"+cuotaMensual)
             document.getElementById("resultadoCoutaMensual").innerHTML="s/" + cuotaMensual
         } else if(tipoMoneda.toLowerCase() == "dolares"){
-            console.log("$"+cuotaMensual)
+            // console.log("$"+cuotaMensual)
             document.getElementById("resultadoCoutaMensual").innerHTML="$" + cuotaMensual
         } 
 })
