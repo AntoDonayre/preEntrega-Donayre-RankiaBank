@@ -33,14 +33,78 @@
                     <div class="oddTittle"><h2>Simula tus cuotas</h2></div>
                     <div class="oddDescripction"><p>Si tienes pensado solicitar un préstamo, haz un calculo rápido del monto mensual que pagarías por el total solicitado.</p></div>
                     <div class="lowContainer">
-                        <div class="leftContSect"></div>
-                        <div class="rigthContSect"></div>
+                        <div class="leftContSect">
+                            <h4>Rellena los siguientes datos:</h4>
+                            <!-- JS -->
+                            <form action="" method="get" id="inputForm">
+                                <label>Tipo de moneda</label> <br>
+                                <input class="stdOddJs" type="text" name="" id="tipoMoneda"> <br>
+                                <label>Monto total del préstamo</label> <br>
+                                <input class="stdOddJs" type="number" name="" id="montoPrestamo"> <br>
+                                <label>N° de cuotas</label> <br>
+                                <input class="stdOddJs" type="number" name="" id="cuotasCliente"> <br>
+                                <label>Tasa de interés anual (TEA)</label> <br>
+                                <input class="stdOddJs" type="number" name="" id="interesAnual"> <br>
+                            </form>
+                            <!-- JS -->
+                            <div class="buttonCont">
+                                <button type="submit" form="inputForm" value="submit">Enviar</button>
+                                <button type="reset" form="inputForm" value="reset">Limpiar</button>
+                            </div>
+                            
+                        </div>
+                        <div class="rigthContSect">
+                            <h4>Tu cuota mensual seria:</h4>
+                            <!-- JS -->
+                            <div class="resultOddJs" id="resultadoCoutaMensual"></div>
+                            <!-- JS -->
+                            <p>Recuerda que el resultado es un referencial aproximado.</p>
+                        </div>
                     </div>
                 </section>
             </article>
         </main>
         <hr>
-        <footer></footer>
+        <footer>
+            <div class="footerCont">
+                <div class="columnsFoot">
+                    <h5>Acerca de RankiaBank</h5>
+                    <a href="">Tasas y tarifas</a>
+                    <a href="">¿Como protegemos tus datos?</a>
+                    <a href="">Información para inversionistas</a>
+                    <a href="">Sobre nosotros</a>
+                </div>
+                <div class="columnsFoot">
+                    <h5>Otros servicios</h5>
+                    <a href="">Trabaja con nosotros</a>
+                    <a href="">Obtén un seguro vehicular</a>
+                    <a href="">Obtén un seguro para tu hogar</a>
+                </div>
+                <div class="columnsFoot">
+                    <div class="ColumnCont">
+                        <h5>Contacto</h5>
+                        <a href=""><i class="fa-solid fa-phone"></i> (01) 308 2525</a>
+                        <a href=""><i class="fa-solid fa-at"></i> Escríbenos</a>
+                    </div>
+                    <div class="ColumnContRedes">
+                        <h5>Síguenos</h5>
+                        <div>
+                            <a href=""><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="ColumnContApp">
+                        <h5>Descarga el app</h5>
+                        <div>
+                            <a href=""><i class="fa-brands fa-apple fa-xl"></i></a>
+                            <a href=""><i class="fa-brands fa-android fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script src="/js/app.js"></script>
 </body>
 </html>

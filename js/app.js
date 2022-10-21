@@ -1,17 +1,17 @@
-// let desc1 = "Bienvenido a RankiaBank, calcula el valor de tus cuotas mensuales aquí"
-// let desc2 = "Por favor rellena los siguientes datos:"+"\n"+"Tipo de moneda"+"\n"+"Monto"+"\n"+"N° de cuotas"+"\n"+"Tasa efectiva anual"
-// alert(desc1)
-// alert(desc2)
+let desc1 = "Bienvenido a RankiaBank, calcula el valor de tus cuotas mensuales aquí"
+let desc2 = "Por favor rellena los siguientes datos:"+"\n"+"Tipo de moneda"+"\n"+"Monto"+"\n"+"N° de cuotas"+"\n"+"Tasa efectiva anual"
+alert(desc1)
+alert(desc2)
 
-// const pedirMoneda = () => {
-//     let monedaElegida = prompt("Por favor seleccione el tipo de moneda:"+"\n"+"soles"+"\n"+"dolares").toLowerCase();
-//     while (monedaElegida !== 'dolares' && monedaElegida !== 'soles') {
-//         alert('El tipo de moneda seleccionada, no se encuentra disponible por el momento, por favor selecciona entre soles o dolares');
-//         monedaElegida = prompt("Por favor seleccione el tipo de moneda:"+"\n"+"soles"+"\n"+"dolares");
-//     }
-//     return monedaElegida;
-// }
-// const monedaDelUsuario = pedirMoneda();
+const pedirMoneda = () => {
+    let monedaElegida = prompt("Por favor seleccione el tipo de moneda:"+"\n"+"soles"+"\n"+"dolares").toLowerCase();
+    while (monedaElegida !== 'dolares' && monedaElegida !== 'soles') {
+        alert('El tipo de moneda seleccionada, no se encuentra disponible por el momento, por favor selecciona entre soles o dolares');
+        monedaElegida = prompt("Por favor seleccione el tipo de moneda:"+"\n"+"soles"+"\n"+"dolares");
+    }
+    return monedaElegida;
+}
+const monedaDelUsuario = pedirMoneda();
 
 // let monto = Number(prompt("Ahora ingrese el monto del préstamo a solicitar:"))
 

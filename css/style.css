@@ -113,7 +113,8 @@ main {
           justify-content: space-evenly;
           align-items: center; }
           main .mainCont .main1 .leftCont .client img {
-            width: 235px; }
+            width: 235px;
+            border-radius: 10px; }
           main .mainCont .main1 .leftCont .client div {
             width: 50%;
             height: 100%;
@@ -289,12 +290,12 @@ main {
       background-image: url(/img/papaYbebe.webp);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position-y: -300px;
+      background-position-y: -380px;
       background-position-x: center;
       border-radius: 0px 0px 18px 18px; }
     main .simulatorMainCont .simulatordownerCont {
       width: 100%;
-      height: auto; }
+      height: 90vh; }
       main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
         font-family: 'Poppins';
         font-weight: 700;
@@ -312,14 +313,82 @@ main {
         display: flex;
         justify-content: space-evenly; }
         main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
-          width: 200px;
-          height: 200px;
-          background-color: #3C4048; }
+          width: 550px;
+          height: 520px;
+          border-radius: 15px;
+          background-color: rgba(3, 63, 255, 0.09);
+          padding: 28px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect h4 {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 25px;
+            text-align: center; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form label {
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 16px; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form input {
+            width: 360px;
+            height: 22px;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #033FFF; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect .buttonCont button {
+            width: 180px;
+            height: 36px;
+            border-radius: 5px;
+            border-style: none;
+            background-color: #033FFF;
+            color: white;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 15px;
+            transition: 0.2s; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect .buttonCont button:hover {
+              transform: scale(0.9); }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect .buttonCont button:active {
+              background-color: #3C4048; }
         main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
           width: 550px;
-          height: 560px;
+          height: 520px;
           border-radius: 15px;
-          background-color: rgba(3, 63, 255, 0.09); }
+          background-color: rgba(3, 63, 255, 0.09);
+          padding: 28px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect h4 {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 25px;
+            text-align: center;
+            color: #3C4048; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs {
+            width: 80%;
+            height: 40%;
+            background-color: white;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: #033FFF;
+            border-width: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs p {
+              font-family: 'Poppins';
+              font-weight: 500;
+              font-size: 45px;
+              color: #3C4048; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect p {
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 13px; }
 
 footer {
   width: 100%;
@@ -360,7 +429,8 @@ footer {
       footer .footerCont .columnsFoot .ColumnCont {
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 25px; }
         footer .footerCont .columnsFoot .ColumnCont a {
           color: #3C4048;
           transition: 0.2s; }
@@ -371,7 +441,8 @@ footer {
       footer .footerCont .columnsFoot .ColumnContRedes {
         display: flex;
         flex-direction: column;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 25px; }
         footer .footerCont .columnsFoot .ColumnContRedes div a {
           color: #3C4048;
           transition: 0.2s; }
