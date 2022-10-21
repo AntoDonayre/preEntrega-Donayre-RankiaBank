@@ -30,21 +30,62 @@ footer{
                 font-family: 'Poppins';
                 font-weight: 300;
                 font-size: 17px;
+                transition: 0.2s;
+                &:hover{
+                    color: #033FFF;
+                }
+                &:active{
+                    color: rgba(0, 46, 148, 0.6);
+                }
             }
             .ColumnCont{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                a{
+                    color: #3C4048;
+                    transition: 0.2s;
+                    &:hover{
+                        color: #033FFF;
+                    }
+                    &:active{
+                        color: rgba(0, 46, 148, 0.6);
+                    }
+                }
             }
             .ColumnContRedes{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                div{
+                    a{
+                        color: #3C4048;
+                        transition: 0.2s;
+                        &:hover{
+                            color: #033FFF;
+                        }
+                        &:active{
+                            color: rgba(0, 46, 148, 0.6);
+                        }
+                    }
+                }
             }
             .ColumnContApp{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                div{
+                    a{
+                        color: #3C4048;
+                        transition: 0.2s;
+                        &:hover{
+                            color: #033FFF;
+                        }
+                        &:active{
+                            color: rgba(0, 46, 148, 0.6);
+                        }
+                    }
+                }
             }
         }
     }
