@@ -30,10 +30,10 @@ var cuentaDigital = document.getElementById("prdNameC3")
 var cuentaInternacional = document.getElementById("prdNameC4")
 
 var cuentas = {
-    cuentaAhorro: cuentaAhorro.textContent,
-    cuentaSueldo: cuentaSueldo.textContent,
-    cuentaDigital: cuentaDigital.textContent,
-    cuentaInternacional: cuentaInternacional.textContent,
+    cuentaAhorro: cuentaAhorro.innerHTML,
+    cuentaSueldo: cuentaSueldo.innerHTML,
+    cuentaDigital: cuentaDigital.innerHTML,
+    cuentaInternacional: cuentaInternacional.innerHTML,
 }
 
 console.log (cuentas)
@@ -44,8 +44,8 @@ var tarjetaDebito = document.getElementById("prdNameT1")
 var tarjetaCredito = document.getElementById("prdNameT2")
 
 var tarjetas = {
-    tarjetaDebito: tarjetaDebito.textContent,
-    tarjetaCredito: tarjetaCredito.textContent,
+    tarjetaDebito: tarjetaDebito.innerHTML,
+    tarjetaCredito: tarjetaCredito.innerHTML,
 }
 
 console.log(tarjetas)
@@ -58,10 +58,10 @@ var seguroVida = document.getElementById("prdNameS3")
 var seguroVehicular = document.getElementById("prdNameS4")
 
 var seguros = {
-    seguroTarjetas: seguroTarjetas.textContent,
-    seguroFinanciero: seguroFinanciero.textContent,
-    seguroVida: seguroVida.textContent,
-    seguroVehicular: seguroVehicular.textContent,
+    seguroTarjetas: seguroTarjetas.innerHTML,
+    seguroFinanciero: seguroFinanciero.innerHTML,
+    seguroVida: seguroVida.innerHTML,
+    seguroVehicular: seguroVehicular.innerHTML,
 }
 
 console.log(seguros)
@@ -102,30 +102,3 @@ if(clntFilter1 && clntFilter2 && clntFilter3 && clntFilter4){ /*falta igualarlo 
     console.log("Cliente Regular")
 }
 
-
-
-// Simulador de cuotas //
-console.log("---simulador de cuotas con DOM, visualizado en HTML (simulador de cuotas page)---")
-
-const inputForm = document.getElementById("inputForm")
-inputForm.addEventListener("submit", (e) => {
-    e.preventDefault()
-    const tipoMoneda=document.getElementById("tipoMoneda").value;
-    const montoPrestamo=Number(document.getElementById("montoPrestamo").value);
-    const cuotasCliente=Number(document.getElementById("cuotasCliente").value);
-    const interesAnual=Number(document.getElementById("interesAnual").value);
-
-    let cuotasS1 = (montoPrestamo/cuotasCliente)
-    let cuotasS2 = (interesAnual/12)
-    let resulCuotas = cuotasS1*cuotasS2
-    let deudaTotal = resulCuotas+montoPrestamo
-    let cuotaMensual = Math.round(deudaTotal/cuotasCliente)
-
-    if(tipoMoneda.toLowerCase() =="soles"){
-            // console.log("s/"+cuotaMensual)
-            document.getElementById("resultadoCoutaMensual").innerHTML="s/" + cuotaMensual
-        } else if(tipoMoneda.toLowerCase() == "dolares"){
-            // console.log("$"+cuotaMensual)
-            document.getElementById("resultadoCoutaMensual").innerHTML="$" + cuotaMensual
-        } 
-})
