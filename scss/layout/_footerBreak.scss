@@ -1,0 +1,31 @@
+@media (min-width: 769px) and (max-width: 1024px){
+    footer{
+        .footerCont{
+            .columnsFoot{
+                text-align: center;
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    footer{
+        height: 120vh;
+        .footerCont{
+            width: 80%;
+            flex-direction: column;
+            padding: 0px;
+            .columnsFoot{
+                width: 100%;
+                text-align: center;
+                transform: scale(0.9);
+                .ColumnContRedes{
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -433,11 +433,214 @@
             }
         }
     }
-    footer{
-        .footerCont{
-            .columnsFoot{
-                text-align: center;
-                transform: scale(0.9);
+}
+@media (min-width: 481px) and (max-width: 768px){
+    main{
+        .mainCont{
+            .main1{
+                height: 80vh;
+                margin-top: 20px;
+                flex-direction: column;
+                justify-content: space-evenly;
+                background-color: $lightBlue;
+                border-radius: 20px;
+                transition: .2s;
+                body.dark & {
+                    background-color: transparent;
+                }
+                .leftCont{
+                    width: 100%;
+                    height: 30%;
+                    .slogan{
+                        margin-top: 30px;
+                        width: 90%;
+                        h3{
+                            font-size: 30px;
+                            text-align: center;
+                        }
+                    }
+                    .client{
+                        display: none;
+                    }
+                }
+                .rigthCont{
+                    width: 100%;
+                    height: 60%;
+                    align-items: center;
+                    justify-content: space-between;
+                    div{
+                        img{
+                            width: 320px;
+                        }
+                    }
+                    .backCardTarget{
+                        display: none;
+                    }
+                    .clientGhost{
+                        margin: 20px 0px 20px 0px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 72%;
+                        img{
+                            display: none;
+                        }
+                        div{
+                            p{
+                                margin: 12px 0px 12px 0px;
+                               font-family: 'Poppins'; 
+                               font-weight: 300;
+                               font-size: 15px;
+                               color: $grease;
+                               body.dark & {
+                                color: $white;
+                               }
+                            }
+                            button{
+                                background-color: transparent;
+                                border-radius: 11px;
+                                border-color: $blue;
+                                border-style: solid;
+                                border-width: 1px;
+                                width: 170px;
+                                height: 48px;
+                                transition: .2s;
+                                body.dark & {
+                                    border-color: $lighMode;
+                                    border-width: 1.5px;
+                                }
+                                a{
+                                    text-decoration: none;
+                                    font-family: 'Poppins';
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    color: $blue;
+                                    transition: .2s;
+                                    body.dark & {
+                                        color: $lighMode;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main2{
+                height: 100vh;
+                flex-direction: column;
+                align-items: center;
+                .leftCont2{
+                    margin: 40px 0px 40px 0px;
+                    div{
+                        img{
+                            width: 160px;
+                        }
+                    }
+                    .backCardTarget2{
+                        display: none;
+                    }
+                }
+                .rigthCont2{
+                    align-items: center;
+                    width: 100%;
+                    .slogan2{
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                        font-size: 20px;
+                        margin: 0px; 
+                    }
+                }
+            }
+            .main3{
+                margin-bottom: 25px;
+                .main3Cont{
+                    h4{
+                        font-size: 30px;
+                    }
+                    section{
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(2, 1fr);
+                        justify-items: center;
+                        align-content: center;
+                        div{
+                            margin: 4px;
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+        }
+        .simulatorMainCont{
+            .prestamoInmediato{
+                height: 120px;
+                background-position-y: -110px;
+                body.dark & {
+                    background-position-y: -50px;
+                }
+            }
+            .simulatordownerCont{
+                height: 150vh;
+                .oddTittle{
+                    h2{
+                        font-size: 30px;
+                    }
+                }
+                .oddDescripction{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+                .lowContainer{
+                    flex-direction: column;
+                    align-items: center;
+                    .leftContSect{
+                        transform: scale(0.72);
+                        form{
+                            .oddCont{
+                                p{
+                                    margin: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .rigthContSect{
+                        transform: scale(0.72);
+                    }
+                }
+            }
+        }
+        .mainPrds{
+            height: 110vh;
+            .cc1{
+                .cc1a{
+                    height: 120px;
+                    body.dark & {
+                        background-position-y: -50px;
+                    }
+                }
+                .cc1b{
+                    .cc1ba{
+                        font-size: 30px;
+                    }
+                    .cc1bb{
+                        font-size: 18px;
+                    }
+                }
+                .prdsCont{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    div{
+                        margin: 7px 0px 7px 0px;
+                        i{
+                            transform: scale(0.7);
+                        }
+                    }
+                }
             }
         }
     }
