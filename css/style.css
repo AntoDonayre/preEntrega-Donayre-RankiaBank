@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center; }
     body .bodyCont hr {
+      margin: 1px;
       width: 90%;
       border-style: solid;
       border-color: #B2B2B2; }
@@ -47,12 +48,12 @@ header {
         transition: .2s; }
         body.dark header .headerCont .brand a {
           color: #FFB200; }
-    header .headerCont .navbar {
+    header .headerCont .navMenu {
       width: 50%;
       display: flex;
       justify-content: space-evenly;
       align-items: center; }
-      header .headerCont .navbar .aMenu {
+      header .headerCont .navMenu .aMenu {
         color: #B2B2B2;
         text-decoration: none;
         font-family: 'Poppins';
@@ -60,14 +61,16 @@ header {
         font-size: 17px;
         background-color: transparent;
         transition: 0.2s; }
-        header .headerCont .navbar .aMenu:hover {
+        header .headerCont .navMenu .aMenu:hover {
           color: #033FFF; }
-        header .headerCont .navbar .aMenu:active {
+        header .headerCont .navMenu .aMenu:active {
           color: #3C4048; }
-        body.dark header .headerCont .navbar .aMenu {
+        body.dark header .headerCont .navMenu .aMenu {
           color: white; }
-          body.dark header .headerCont .navbar .aMenu:hover {
+          body.dark header .headerCont .navMenu .aMenu:hover {
             color: #FFB200; }
+    header .headerCont .navbar {
+      display: none; }
     header .headerCont .switchCont .switch {
       background-color: #3C4048;
       border-radius: 8px;
@@ -138,6 +141,42 @@ header {
         color: white; }
         body.dark header .searchCont input:hover {
           border-color: #FFB200; }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header .headerCont .brand {
+    width: 100%;
+    justify-content: center;
+    margin-left: 24px; }
+  header .headerCont .navMenu {
+    display: none; }
+  header .headerCont .searchCont {
+    display: none; }
+  header .headerCont .navbar {
+    width: 20%;
+    display: block; }
+    header .headerCont .navbar .container-fluid {
+      font-family: 'Poppins';
+      font-weight: 300;
+      font-size: 17px;
+      width: 90%;
+      padding: 0px;
+      display: flex;
+      justify-content: center; }
+      header .headerCont .navbar .container-fluid .navbar-toggler {
+        background-color: white; }
+        body.dark header .headerCont .navbar .container-fluid .navbar-toggler {
+          background-color: #FFB200; }
+      body.dark header .headerCont .navbar .container-fluid .offcanvas, body.dark header .headerCont .navbar .container-fluid .offcanvas-end, body.dark header .headerCont .navbar .container-fluid .show {
+        background-color: #3C4048; }
+      body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-header .text-reset, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-header .text-reset, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-header .text-reset {
+        background-color: #FFB200; }
+      header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item, header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item, header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item {
+        margin: 15px 0px 0px 0px; }
+        header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item a, header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item a, header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item a {
+          text-decoration: none;
+          color: #3C4048; }
+          body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item a, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item a, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item a {
+            color: white; } }
 
 main {
   width: 100%;
@@ -931,17 +970,33 @@ main {
         margin: 4px;
         transform: scale(0.9); }
   main .simulatorMainCont .prestamoInmediato {
+    height: 250px;
     background-position-y: -190px; }
     body.dark main .simulatorMainCont .prestamoInmediato {
       background-position-y: -50px; }
-  main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
-    transform: scale(0.95); }
-  main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
-    transform: scale(0.95); }
-  body.dark main .mainPrds .cc1 .cc1a {
-    background-position-y: -70px; }
-  main .mainPrds .cc1 .prdsCont {
-    transform: scale(0.91); }
+  main .simulatorMainCont .simulatordownerCont {
+    height: 150vh; }
+    main .simulatorMainCont .simulatordownerCont .lowContainer {
+      flex-direction: column;
+      align-items: center; }
+      main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+        transform: scale(0.9); }
+        main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont p {
+          margin: 0px; }
+      main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+        transform: scale(0.9); }
+  main .mainPrds {
+    height: 80vh; }
+    main .mainPrds .cc1 .cc1a {
+      height: 250px; }
+      body.dark main .mainPrds .cc1 .cc1a {
+        background-position-y: -70px; }
+    main .mainPrds .cc1 .prdsCont {
+      transform: scale(0.8); }
+      main .mainPrds .cc1 .prdsCont div {
+        margin: 0px 7px 0px 7px; }
+        main .mainPrds .cc1 .prdsCont div i {
+          transform: scale(0.7); }
   footer .footerCont .columnsFoot {
     text-align: center;
     transform: scale(0.9); } }

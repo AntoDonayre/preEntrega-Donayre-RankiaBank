@@ -385,31 +385,50 @@
         }
         .simulatorMainCont{
             .prestamoInmediato{
+                height: 250px;
                 background-position-y: -190px;
                 body.dark & {
                     background-position-y: -50px;
                 }
             }
             .simulatordownerCont{
+                height: 150vh;
                 .lowContainer{
+                    flex-direction: column;
+                    align-items: center;
                     .leftContSect{
-                        transform: scale(0.95);
+                        transform: scale(0.9);
+                        form{
+                            .oddCont{
+                                p{
+                                    margin: 0px;
+                                }
+                            }
+                        }
                     }
                     .rigthContSect{
-                        transform: scale(0.95);
+                        transform: scale(0.9);
                     }
                 }
             }
         }
         .mainPrds{
+            height: 80vh;
             .cc1{
                 .cc1a{
+                    height: 250px;
                     body.dark & {
                         background-position-y: -70px;
                     }
                 }
                 .prdsCont{
-                    transform: scale(0.91);
+                    transform: scale(0.8);
+                    div{
+                        margin: 0px 7px 0px 7px;
+                        i{
+                            transform: scale(0.7);
+                        }
+                    }
                 }
             }
         }

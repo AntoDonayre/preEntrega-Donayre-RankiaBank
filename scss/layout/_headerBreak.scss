@@ -1,0 +1,63 @@
+//769px - 1024px
+@media (min-width: 769px) and (max-width: 1024px){
+    header{
+        .headerCont{
+            .brand{
+                width: 100%;
+                justify-content: center;
+                margin-left: 24px;
+            }
+            .navMenu{
+                display: none;
+            }
+            .searchCont{
+                display: none;
+            }
+            .navbar{
+                width: 20%;
+                display: block;
+                .container-fluid{
+                    font-family: 'Poppins';
+                    font-weight: 300;
+                    font-size: 17px;
+                    width: 90%;
+                    padding: 0px;
+                    display: flex;
+                    justify-content: center;
+                    .navbar-toggler{
+                        background-color: $white;
+                        body.dark & {
+                            background-color: $lighMode;
+                        }
+                    }
+                    .offcanvas, .offcanvas-end, .show{
+                        body.dark & {
+                            background-color: $grease;
+                        }
+                        .offcanvas-header{
+                            .btn-close, .text-reset{
+                                body.dark & {
+                                    background-color: $lighMode;
+                                }
+                            }
+                        }
+                        .offcanvas-body{
+                            .navbar-nav{
+                                .nav-item{
+                                    margin: 15px 0px 0px 0px;
+                                    a{
+                                        text-decoration: none;
+                                        color: $grease;
+                                        body.dark & {
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
