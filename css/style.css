@@ -652,6 +652,10 @@ main {
         padding: 10px;
         width: 261px;
         height: 192px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #033FFF;
         border-radius: 22px;
         transition: .2s; }
@@ -662,6 +666,13 @@ main {
           border-style: solid;
           border-color: white;
           border-width: 1px; }
+        main .mainPrds .cc1 .prdsCont div i {
+          color: white; }
+        main .mainPrds .cc1 .prdsCont div h6 {
+          font-family: 'Poppins';
+          font-weight: 500;
+          font-size: 19px;
+          color: white; }
 
 footer {
   width: 100%;

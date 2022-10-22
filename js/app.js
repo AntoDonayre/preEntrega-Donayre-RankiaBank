@@ -22,6 +22,10 @@ if(localStorage.getItem('dark-mode') == 'true'){
     btnSwitch.classList.remove('active');
 }
 
+//JSON con objetos
+
+// console.log(document.getElementById("#accounts"))
+
 // Simulador de cuotas
 
 const inputForm = document.getElementById("inputForm")
@@ -47,30 +51,34 @@ inputForm.addEventListener("submit", (e) => {
         } 
 })
 
-console.log("------Objetos (préstamos ofrecidos)------")
+
+
+
+/////////////////////////////////////
+// console.log("------Objetos (préstamos ofrecidos)------")
 
 // //prestamo 1
 // let p1 = "Básico"
-// let valor1 = montoPrestamo + (montoPrestamo*0.10).value
-// let t1 = interesAnual.value
+// let valor1 = monto + (monto*0.10)
+// let t1 = tasa
 
 // let prestamo1 = {
 //     p1 : "Básico",
-//     valor1 : montoPrestamo + (montoPrestamo*0.10),
-//     t1 : interesAnual + "%",
+//     valor1 : monto + (monto*0.10),
+//     t1 : tasa + "%",
 // }
 
 // console.log(prestamo1)
 
 // //prestamo 2
 // let p2 = "Complejo"
-// let valor2 = montoPrestamo + (montoPrestamo*0.10)
-// let t2 = interesAnual
+// let valor2 = monto + (monto*0.10)
+// let t2 = tasa
 
 // let prestamo2 = {
 //     p2 : "Complejo",
-//     valor2 : montoPrestamo + (montoPrestamo*0.30),
-//     t2 : interesAnual + "%",
+//     valor2 : monto + (monto*0.30),
+//     t2 : tasa + "%",
 // }
 
 // console.log(prestamo2)

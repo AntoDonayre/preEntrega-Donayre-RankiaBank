@@ -628,6 +628,10 @@ main{
                     padding: 10px;
                     width: 261px;
                     height: 192px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     background-color: $blue;
                     border-radius: 22px;
                     transition: .2s;
@@ -639,6 +643,15 @@ main{
                         border-style: solid;
                         border-color: $white;
                         border-width: 1px;
+                    }
+                    i{
+                        color: $white;
+                    }
+                    h6{
+                        font-family: 'Poppins';
+                        font-weight: 500;
+                        font-size: 19px;
+                        color: $white;
                     }
                 }
             }
