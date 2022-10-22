@@ -253,6 +253,8 @@ main {
           transition: .2s; }
           body.dark main .mainCont .main1 .rigthCont .backCardTarget {
             background-color: transparent; }
+        main .mainCont .main1 .rigthCont .clientGhost {
+          display: none; }
     main .mainCont .main2 {
       width: 100%;
       height: 70vh;
@@ -675,6 +677,274 @@ main {
           color: white; }
         main .mainPrds .cc1 .prdsCont div .prdName {
           display: none; }
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  main .mainCont .main1 {
+    height: 100vh;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(3, 63, 255, 0.09);
+    border-radius: 20px;
+    transition: .2s; }
+    body.dark main .mainCont .main1 {
+      background-color: transparent; }
+    main .mainCont .main1 .leftCont {
+      width: 100%;
+      height: 30%; }
+      main .mainCont .main1 .leftCont .slogan {
+        width: 60%;
+        margin-bottom: 0px; }
+        main .mainCont .main1 .leftCont .slogan h3 {
+          font-size: 50px;
+          text-align: center; }
+      main .mainCont .main1 .leftCont .client {
+        display: none; }
+    main .mainCont .main1 .rigthCont {
+      width: 100%;
+      height: 70%;
+      align-items: center; }
+      main .mainCont .main1 .rigthCont div img {
+        width: 520px; }
+      main .mainCont .main1 .rigthCont .backCardTarget {
+        display: none; }
+      main .mainCont .main1 .rigthCont .clientGhost {
+        margin: 20px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%; }
+        main .mainCont .main1 .rigthCont .clientGhost img {
+          display: none; }
+        main .mainCont .main1 .rigthCont .clientGhost div p {
+          margin: 12px 0px 12px 0px;
+          font-family: 'Poppins';
+          font-weight: 300;
+          font-size: 20px;
+          color: #3C4048; }
+        main .mainCont .main1 .rigthCont .clientGhost div button {
+          background-color: transparent;
+          border-radius: 11px;
+          border-color: #033FFF;
+          border-style: solid;
+          border-width: 1px;
+          width: 170px;
+          height: 48px;
+          transition: .2s; }
+          body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
+            border-color: #FFB200;
+            border-width: 1.5px; }
+          main .mainCont .main1 .rigthCont .clientGhost div button a {
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 15px;
+            color: #033FFF;
+            transition: .2s; }
+            body.dark main .mainCont .main1 .rigthCont .clientGhost div button a {
+              color: #FFB200; }
+  main .mainCont .main2 {
+    height: 90vh; }
+    main .mainCont .main2 .leftCont2 .backCardTarget2 {
+      display: none; }
+  main .simulatorMainCont .prestamoInmediato {
+    background-position-y: -190px; }
+    body.dark main .simulatorMainCont .prestamoInmediato {
+      background-position-y: -50px; }
+  main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+    width: 400px;
+    height: 420px; }
+  main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+    width: 400px;
+    height: 420px; } }
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+  main .mainCont .main1 {
+    height: 100vh;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(3, 63, 255, 0.09);
+    border-radius: 20px;
+    transition: .2s; }
+    body.dark main .mainCont .main1 {
+      background-color: transparent; }
+    main .mainCont .main1 .leftCont {
+      width: 100%;
+      height: 30%; }
+      main .mainCont .main1 .leftCont .slogan {
+        margin-top: 30px;
+        width: 90%; }
+        main .mainCont .main1 .leftCont .slogan h3 {
+          font-size: 50px;
+          text-align: center; }
+      main .mainCont .main1 .leftCont .client {
+        display: none; }
+    main .mainCont .main1 .rigthCont {
+      width: 100%;
+      height: 70%;
+      align-items: center; }
+      main .mainCont .main1 .rigthCont div img {
+        width: 520px; }
+      main .mainCont .main1 .rigthCont .backCardTarget {
+        display: none; }
+      main .mainCont .main1 .rigthCont .clientGhost {
+        margin: 20px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%; }
+        main .mainCont .main1 .rigthCont .clientGhost img {
+          display: none; }
+        main .mainCont .main1 .rigthCont .clientGhost div p {
+          margin: 12px 0px 12px 0px;
+          font-family: 'Poppins';
+          font-weight: 300;
+          font-size: 20px;
+          color: #3C4048; }
+        main .mainCont .main1 .rigthCont .clientGhost div button {
+          background-color: transparent;
+          border-radius: 11px;
+          border-color: #033FFF;
+          border-style: solid;
+          border-width: 1px;
+          width: 170px;
+          height: 48px;
+          transition: .2s; }
+          body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
+            border-color: #FFB200;
+            border-width: 1.5px; }
+          main .mainCont .main1 .rigthCont .clientGhost div button a {
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 15px;
+            color: #033FFF;
+            transition: .2s; }
+            body.dark main .mainCont .main1 .rigthCont .clientGhost div button a {
+              color: #FFB200; }
+  main .mainCont .main2 {
+    height: 90vh; }
+    main .mainCont .main2 .leftCont2 div img {
+      width: 260px; }
+    main .mainCont .main2 .leftCont2 .backCardTarget2 {
+      display: none; }
+  main .mainCont .main3 .main3Cont section div {
+    width: 210px;
+    height: 145px;
+    transform: scale(0.98); }
+  main .simulatorMainCont .prestamoInmediato {
+    background-position-y: -190px; }
+    body.dark main .simulatorMainCont .prestamoInmediato {
+      background-position-y: -50px; }
+  main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+    transform: scale(0.95); }
+  main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+    transform: scale(0.95); }
+  body.dark main .mainPrds .cc1 .cc1a {
+    background-position-y: -70px; }
+  main .mainPrds .cc1 .prdsCont {
+    transform: scale(0.91); } }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  main .mainCont .main1 {
+    height: 100vh;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(3, 63, 255, 0.09);
+    border-radius: 20px;
+    transition: .2s; }
+    body.dark main .mainCont .main1 {
+      background-color: transparent; }
+    main .mainCont .main1 .leftCont {
+      width: 100%;
+      height: 30%; }
+      main .mainCont .main1 .leftCont .slogan {
+        margin-top: 30px;
+        width: 90%; }
+        main .mainCont .main1 .leftCont .slogan h3 {
+          font-size: 50px;
+          text-align: center; }
+      main .mainCont .main1 .leftCont .client {
+        display: none; }
+    main .mainCont .main1 .rigthCont {
+      width: 100%;
+      height: 70%;
+      align-items: center; }
+      main .mainCont .main1 .rigthCont div img {
+        width: 520px; }
+      main .mainCont .main1 .rigthCont .backCardTarget {
+        display: none; }
+      main .mainCont .main1 .rigthCont .clientGhost {
+        margin: 20px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 72%; }
+        main .mainCont .main1 .rigthCont .clientGhost img {
+          display: none; }
+        main .mainCont .main1 .rigthCont .clientGhost div p {
+          margin: 12px 0px 12px 0px;
+          font-family: 'Poppins';
+          font-weight: 300;
+          font-size: 20px;
+          color: #3C4048; }
+        main .mainCont .main1 .rigthCont .clientGhost div button {
+          background-color: transparent;
+          border-radius: 11px;
+          border-color: #033FFF;
+          border-style: solid;
+          border-width: 1px;
+          width: 170px;
+          height: 48px;
+          transition: .2s; }
+          body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
+            border-color: #FFB200;
+            border-width: 1.5px; }
+          main .mainCont .main1 .rigthCont .clientGhost div button a {
+            text-decoration: none;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 15px;
+            color: #033FFF;
+            transition: .2s; }
+            body.dark main .mainCont .main1 .rigthCont .clientGhost div button a {
+              color: #FFB200; }
+  main .mainCont .main2 {
+    height: 90vh; }
+    main .mainCont .main2 .leftCont2 div img {
+      width: 260px; }
+    main .mainCont .main2 .leftCont2 .backCardTarget2 {
+      display: none; }
+    main .mainCont .main2 .rigthCont2 {
+      transform: scale(0.78); }
+  main .mainCont .main3 {
+    margin-bottom: 25px; }
+    main .mainCont .main3 .main3Cont section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      align-content: center; }
+      main .mainCont .main3 .main3Cont section div {
+        margin: 4px;
+        transform: scale(0.9); }
+  main .simulatorMainCont .prestamoInmediato {
+    background-position-y: -190px; }
+    body.dark main .simulatorMainCont .prestamoInmediato {
+      background-position-y: -50px; }
+  main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+    transform: scale(0.95); }
+  main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+    transform: scale(0.95); }
+  body.dark main .mainPrds .cc1 .cc1a {
+    background-position-y: -70px; }
+  main .mainPrds .cc1 .prdsCont {
+    transform: scale(0.91); }
+  footer .footerCont .columnsFoot {
+    text-align: center;
+    transform: scale(0.9); } }
 
 footer {
   width: 100%;
