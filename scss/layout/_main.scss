@@ -574,5 +574,74 @@ main{
         }
     }
     //PRODUCTOS
-    
+    .mainPrds{
+        width: 90%;
+        height: 100vh;
+        .cc1{
+            .cc1a{
+                width: 100%;
+                height: 420px;
+                background-image: url(/img/girl.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position-y: -50px;
+                border-radius: 0px 0px 18px 18px;
+                transition: .2s;
+                body.dark & {
+                    background-image: url(/img/womenCreditCard.jpg);
+                    background-position-y: -110px;
+                }
+            }
+            .cc1b{
+                .cc1ba{
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-weight: 700;
+                    font-size: 45px;
+                    color: $grease;
+                    margin: 15px 0px 15px 0px;
+                    transition: .2s;
+                    body.dark & {
+                        color: $white;
+                    }
+                }
+                .cc1bb{
+                    text-align: center;
+                    font-family: 'Poppins';
+                    font-weight: 300;
+                    font-size: 18px;
+                    color: $grease;
+                    margin: 0px 0px 20px 0px;
+                    transition: .2s;
+                    body.dark & {
+                        color: $white;
+                    }
+                }
+            }
+            .prdsCont{
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                height: auto;
+                margin: 50px 0px 70px 0px;
+                div{
+                    padding: 10px;
+                    width: 261px;
+                    height: 192px;
+                    background-color: $blue;
+                    border-radius: 22px;
+                    transition: .2s;
+                    &:hover{
+                        transform: scale(0.9);
+                    }
+                    body.dark & {
+                        background-color: transparent;
+                        border-style: solid;
+                        border-color: $white;
+                        border-width: 1px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -38,12 +38,13 @@ header{
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            a{
+            .aMenu{
                 color: $lightGrease;
                 text-decoration: none;
                 font-family: 'Poppins';
                 font-weight: 300;
                 font-size: 17px;
+                background-color: transparent;
                 transition: 0.2s;
                 &:hover{
                     color: $blue;
@@ -58,7 +59,7 @@ header{
                     }
                 }
             }
-        }
+            }
         .switchCont{
             .switch{
                 background-color: $grease;
