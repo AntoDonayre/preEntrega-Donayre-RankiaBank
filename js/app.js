@@ -22,10 +22,6 @@ if(localStorage.getItem('dark-mode') == 'true'){
     btnSwitch.classList.remove('active');
 }
 
-//JSON
-const producto1 = { id: 2, producto: "Arroz" };
-localStorage.setItem("producto1", producto1);
-
 // Simulador de cuotas
 
 const inputForm = document.getElementById("inputForm")
@@ -35,7 +31,7 @@ inputForm.addEventListener("submit", (e) => {
     const montoPrestamo=Number(document.getElementById("montoPrestamo").value);
     const cuotasCliente=Number(document.getElementById("cuotasCliente").value);
     const interesAnual=Number(document.getElementById("interesAnual").value);
-    
+
     let cuotasS1 = (montoPrestamo/cuotasCliente)
     let cuotasS2 = (interesAnual/12)
     let resulCuotas = cuotasS1*cuotasS2
@@ -50,3 +46,71 @@ inputForm.addEventListener("submit", (e) => {
             document.getElementById("resultadoCoutaMensual").innerHTML="$" + cuotaMensual
         } 
 })
+
+console.log("------Objetos (préstamos ofrecidos)------")
+
+// //prestamo 1
+// let p1 = "Básico"
+// let valor1 = montoPrestamo + (montoPrestamo*0.10).value
+// let t1 = interesAnual.value
+
+// let prestamo1 = {
+//     p1 : "Básico",
+//     valor1 : montoPrestamo + (montoPrestamo*0.10),
+//     t1 : interesAnual + "%",
+// }
+
+// console.log(prestamo1)
+
+// //prestamo 2
+// let p2 = "Complejo"
+// let valor2 = montoPrestamo + (montoPrestamo*0.10)
+// let t2 = interesAnual
+
+// let prestamo2 = {
+//     p2 : "Complejo",
+//     valor2 : montoPrestamo + (montoPrestamo*0.30),
+//     t2 : interesAnual + "%",
+// }
+
+// console.log(prestamo2)
+
+
+// //prestamo 3
+// let p3 = "Ejecutivo"
+// let valor3 = monto + (monto*0.10)
+// let t3 = tasa
+
+// let prestamo3 = {
+//     p3 : "Ejecutivo",
+//     valor3 : monto + (monto*0.40),
+//     t3 : tasa + "%",
+// }
+
+// console.log(prestamo3)
+
+// console.log("------Arrays (montos de los prestamos ofrecidos)------")
+
+// //Arrays
+// let tipoPrestamo = [prestamo1.valor1, prestamo2.valor2, prestamo3.valor3]
+
+// console.log(tipoPrestamo)
+
+// console.log("------Filtrado array (montos que superen los 100 000)------")
+
+// //Filtrado de arrays
+
+// let filtro = tipoPrestamo.filter(element => element > 100000);
+// console.log(filtro)
+
+// console.log("------Tipo de cliente------")
+
+// //Tipo de cliente (solo para la practica en proyecto final)
+
+// if(prestamo1.valor1 < 40000 && prestamo2.valor2 < 40000 && prestamo3.valor3 < 40000){
+//     console.log("Cliente Regular")
+// } else if(prestamo1.valor1 > 100000 && prestamo2.valor2 > 100000 && prestamo3.valor3 > 100000) {
+//     console.log("Cliente Premium")
+// } else {
+//     console.log("Cliente VIP")
+// }

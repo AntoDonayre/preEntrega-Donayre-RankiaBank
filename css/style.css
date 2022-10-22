@@ -102,6 +102,8 @@ header {
         display: block;
         background: none;
         color: white; }
+        body.dark header .headerCont .switchCont .switch span {
+          color: #3C4048; }
   header .searchCont {
     width: 178px;
     display: flex;
@@ -464,12 +466,13 @@ main {
             body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect h4 {
               color: white; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form {
+            max-width: 365px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center; }
             main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .stdOddJs {
-              width: 360px;
+              width: 100%;
               height: 30px;
               border-radius: 5px;
               border-style: solid;
@@ -593,7 +596,8 @@ main {
               color: #3C4048;
               transition: .2s; }
               body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs span {
-                color: white; }
+                color: #FFB200;
+                font-weight: 700; }
           main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect p {
             font-family: 'Poppins';
             font-weight: 300;

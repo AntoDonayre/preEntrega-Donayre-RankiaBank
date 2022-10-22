@@ -98,6 +98,9 @@ header{
                     display: block;
                     background: none;
                     color: $white;
+                    body.dark & {
+                        color: $grease;
+                    }
                 }
             }
         }

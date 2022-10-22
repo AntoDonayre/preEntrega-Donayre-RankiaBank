@@ -400,12 +400,13 @@ main{
                         }
                     }
                     form{
+                        max-width: 365px;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
                         .stdOddJs{
-                            width: 360px;
+                            width: 100%;
                             height: 30px;
                             border-radius: 5px;
                             border-style: solid;
@@ -552,7 +553,8 @@ main{
                             color: $grease;
                             transition: .2s;
                             body.dark & {
-                                color: $white;
+                                color: $lighMode;
+                                font-weight: 700;
                             }
                         }
                     }
@@ -571,4 +573,6 @@ main{
             }
         }
     }
+    //PRODUCTOS
+    
 }
