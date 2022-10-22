@@ -673,6 +673,8 @@ main {
           font-weight: 500;
           font-size: 19px;
           color: white; }
+        main .mainPrds .cc1 .prdsCont div .prdName {
+          display: none; }
 
 footer {
   width: 100%;

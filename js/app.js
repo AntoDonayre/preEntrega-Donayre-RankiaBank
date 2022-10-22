@@ -1,5 +1,5 @@
-// Toggle light & darkmode
-
+// Toggle light & darkmode //
+console.log("-------------localStorage para mantener darkmode por usuario (visualizado en HTML)-------------")
 const btnSwitch = document.querySelector('#switch');
 btnSwitch.addEventListener('click', () =>{
     document.body.classList.toggle('dark');
@@ -22,11 +22,90 @@ if(localStorage.getItem('dark-mode') == 'true'){
     btnSwitch.classList.remove('active');
 }
 
-//JSON con objetos
+//Obj cuentas
+console.log("-------------tipos de cuentas-------------")
+var cuentaAhorro = document.getElementById("prdNameC1")
+var cuentaSueldo = document.getElementById("prdNameC2")
+var cuentaDigital = document.getElementById("prdNameC3")
+var cuentaInternacional = document.getElementById("prdNameC4")
 
-// console.log(document.getElementById("#accounts"))
+var cuentas = {
+    cuentaAhorro: cuentaAhorro.textContent,
+    cuentaSueldo: cuentaSueldo.textContent,
+    cuentaDigital: cuentaDigital.textContent,
+    cuentaInternacional: cuentaInternacional.textContent,
+}
 
-// Simulador de cuotas
+console.log (cuentas)
+
+//obj tarjetas
+console.log("-------------tipos de tarjetas-------------")
+var tarjetaDebito = document.getElementById("prdNameT1")
+var tarjetaCredito = document.getElementById("prdNameT2")
+
+var tarjetas = {
+    tarjetaDebito: tarjetaDebito.textContent,
+    tarjetaCredito: tarjetaCredito.textContent,
+}
+
+console.log(tarjetas)
+
+//obj seguros
+console.log("-------------tipos de seguros-------------")
+var seguroTarjetas = document.getElementById("prdNameS1")
+var seguroFinanciero = document.getElementById("prdNameS2")
+var seguroVida = document.getElementById("prdNameS3")
+var seguroVehicular = document.getElementById("prdNameS4")
+
+var seguros = {
+    seguroTarjetas: seguroTarjetas.textContent,
+    seguroFinanciero: seguroFinanciero.textContent,
+    seguroVida: seguroVida.textContent,
+    seguroVehicular: seguroVehicular.textContent,
+}
+
+console.log(seguros)
+
+//JSON con objetos//
+console.log("-------------pasando de (obj) a (string)-------------")
+var cuentasJSON = JSON.stringify(cuentas)
+var tarjetasJSON = JSON.stringify(tarjetas)
+var segurosJSON = JSON.stringify(seguros)
+
+console.log(cuentasJSON)
+console.log(tarjetasJSON)
+console.log(segurosJSON)
+
+//JSON en localStorage
+console.log("-------------almacenando los (string) en localStorage, revisar application-------------")
+localStorage.setItem("cuentas", cuentasJSON)
+localStorage.setItem("tarjetas", tarjetasJSON)
+localStorage.setItem("seguros", segurosJSON)
+
+//array con nuestros objetos
+console.log("-------------array con objetos-------------")
+var productos = [cuentas, tarjetas, seguros]
+console.log(productos)
+
+//filtro de arrays
+console.log("-------------filtro de arrays-------------")
+var clntFilter1 = productos.filter(element => element = cuentaInternacional);
+var clntFilter2 = productos.filter(element => element = tarjetaCredito);
+var clntFilter3 = productos.filter(element => element = seguroVehicular);
+var clntFilter4 = productos.filter(element => element = seguroTarjetas);
+
+
+
+if(clntFilter1 && clntFilter2 && clntFilter3 && clntFilter4){ /*falta igualarlo a una variable del html*/
+    console.log("Cliente VIP")
+}else{
+    console.log("Cliente Regular")
+}
+
+
+
+// Simulador de cuotas //
+console.log("---simulador de cuotas con DOM, visualizado en HTML (simulador de cuotas page)---")
 
 const inputForm = document.getElementById("inputForm")
 inputForm.addEventListener("submit", (e) => {
@@ -50,75 +129,3 @@ inputForm.addEventListener("submit", (e) => {
             document.getElementById("resultadoCoutaMensual").innerHTML="$" + cuotaMensual
         } 
 })
-
-
-
-
-/////////////////////////////////////
-// console.log("------Objetos (préstamos ofrecidos)------")
-
-// //prestamo 1
-// let p1 = "Básico"
-// let valor1 = monto + (monto*0.10)
-// let t1 = tasa
-
-// let prestamo1 = {
-//     p1 : "Básico",
-//     valor1 : monto + (monto*0.10),
-//     t1 : tasa + "%",
-// }
-
-// console.log(prestamo1)
-
-// //prestamo 2
-// let p2 = "Complejo"
-// let valor2 = monto + (monto*0.10)
-// let t2 = tasa
-
-// let prestamo2 = {
-//     p2 : "Complejo",
-//     valor2 : monto + (monto*0.30),
-//     t2 : tasa + "%",
-// }
-
-// console.log(prestamo2)
-
-
-// //prestamo 3
-// let p3 = "Ejecutivo"
-// let valor3 = monto + (monto*0.10)
-// let t3 = tasa
-
-// let prestamo3 = {
-//     p3 : "Ejecutivo",
-//     valor3 : monto + (monto*0.40),
-//     t3 : tasa + "%",
-// }
-
-// console.log(prestamo3)
-
-// console.log("------Arrays (montos de los prestamos ofrecidos)------")
-
-// //Arrays
-// let tipoPrestamo = [prestamo1.valor1, prestamo2.valor2, prestamo3.valor3]
-
-// console.log(tipoPrestamo)
-
-// console.log("------Filtrado array (montos que superen los 100 000)------")
-
-// //Filtrado de arrays
-
-// let filtro = tipoPrestamo.filter(element => element > 100000);
-// console.log(filtro)
-
-// console.log("------Tipo de cliente------")
-
-// //Tipo de cliente (solo para la practica en proyecto final)
-
-// if(prestamo1.valor1 < 40000 && prestamo2.valor2 < 40000 && prestamo3.valor3 < 40000){
-//     console.log("Cliente Regular")
-// } else if(prestamo1.valor1 > 100000 && prestamo2.valor2 > 100000 && prestamo3.valor3 > 100000) {
-//     console.log("Cliente Premium")
-// } else {
-//     console.log("Cliente VIP")
-// }
