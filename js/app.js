@@ -24,12 +24,12 @@ if(localStorage.getItem('dark-mode') == 'true'){
 
 //Obj cuentas
 console.log("-------------tipos de cuentas-------------")
-var cuentaAhorro = document.getElementById("prdNameC1")
-var cuentaSueldo = document.getElementById("prdNameC2")
-var cuentaDigital = document.getElementById("prdNameC3")
-var cuentaInternacional = document.getElementById("prdNameC4")
+const cuentaAhorro = document.getElementById("prdNameC1")
+const cuentaSueldo = document.getElementById("prdNameC2")
+const cuentaDigital = document.getElementById("prdNameC3")
+const cuentaInternacional = document.getElementById("prdNameC4")
 
-var cuentas = {
+const cuentas = {
     cuentaAhorro: cuentaAhorro.innerHTML,
     cuentaSueldo: cuentaSueldo.innerHTML,
     cuentaDigital: cuentaDigital.innerHTML,
@@ -40,10 +40,10 @@ console.log (cuentas)
 
 //obj tarjetas
 console.log("-------------tipos de tarjetas-------------")
-var tarjetaDebito = document.getElementById("prdNameT1")
-var tarjetaCredito = document.getElementById("prdNameT2")
+const tarjetaDebito = document.getElementById("prdNameT1")
+const tarjetaCredito = document.getElementById("prdNameT2")
 
-var tarjetas = {
+const tarjetas = {
     tarjetaDebito: tarjetaDebito.innerHTML,
     tarjetaCredito: tarjetaCredito.innerHTML,
 }
@@ -52,12 +52,12 @@ console.log(tarjetas)
 
 //obj seguros
 console.log("-------------tipos de seguros-------------")
-var seguroTarjetas = document.getElementById("prdNameS1")
-var seguroFinanciero = document.getElementById("prdNameS2")
-var seguroVida = document.getElementById("prdNameS3")
-var seguroVehicular = document.getElementById("prdNameS4")
+const seguroTarjetas = document.getElementById("prdNameS1")
+const seguroFinanciero = document.getElementById("prdNameS2")
+const seguroVida = document.getElementById("prdNameS3")
+const seguroVehicular = document.getElementById("prdNameS4")
 
-var seguros = {
+const seguros = {
     seguroTarjetas: seguroTarjetas.innerHTML,
     seguroFinanciero: seguroFinanciero.innerHTML,
     seguroVida: seguroVida.innerHTML,
@@ -68,9 +68,9 @@ console.log(seguros)
 
 //JSON con objetos//
 console.log("-------------pasando de (obj) a (string)-------------")
-var cuentasJSON = JSON.stringify(cuentas)
-var tarjetasJSON = JSON.stringify(tarjetas)
-var segurosJSON = JSON.stringify(seguros)
+const cuentasJSON = JSON.stringify(cuentas)
+const tarjetasJSON = JSON.stringify(tarjetas)
+const segurosJSON = JSON.stringify(seguros)
 
 console.log(cuentasJSON)
 console.log(tarjetasJSON)
@@ -84,15 +84,15 @@ localStorage.setItem("seguros", segurosJSON)
 
 //array con nuestros objetos
 console.log("-------------array con objetos-------------")
-var productos = [cuentas, tarjetas, seguros]
+const productos = [cuentas, tarjetas, seguros]
 console.log(productos)
 
 //filtro de arrays
 console.log("-------------filtro de arrays-------------")
-var clntFilter1 = productos.filter(element => element = cuentaInternacional);
-var clntFilter2 = productos.filter(element => element = tarjetaCredito);
-var clntFilter3 = productos.filter(element => element = seguroVehicular);
-var clntFilter4 = productos.filter(element => element = seguroTarjetas);
+const clntFilter1 = productos.filter(element => element = cuentaInternacional);
+const clntFilter2 = productos.filter(element => element = tarjetaCredito);
+const clntFilter3 = productos.filter(element => element = seguroVehicular);
+const clntFilter4 = productos.filter(element => element = seguroTarjetas);
 
 
 
