@@ -142,77 +142,131 @@ header {
         body.dark header .searchCont input:hover {
           border-color: #FFB200; }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  header .headerCont .brand {
+@media screen and (min-width: 1400px) {
+  header {
     width: 100%;
+    height: 49px;
+    display: flex;
     justify-content: center;
-    margin-left: 24px; }
-  header .headerCont .navMenu {
-    display: none; }
-  header .headerCont .searchCont {
-    display: none; }
-  header .headerCont .navbar {
-    width: 20%;
-    display: block; }
-    header .headerCont .navbar .container-fluid {
-      font-family: 'Poppins';
-      font-weight: 300;
-      font-size: 17px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    transition: .2s; }
+    body.dark header {
+      background-color: #3C4048; }
+    header .headerCont {
       width: 90%;
-      padding: 0px;
+      height: 100%;
       display: flex;
-      justify-content: center; }
-      header .headerCont .navbar .container-fluid .navbar-toggler {
-        background-color: white; }
-        body.dark header .headerCont .navbar .container-fluid .navbar-toggler {
-          background-color: #FFB200; }
-      body.dark header .headerCont .navbar .container-fluid .offcanvas, body.dark header .headerCont .navbar .container-fluid .offcanvas-end, body.dark header .headerCont .navbar .container-fluid .show {
-        background-color: #3C4048; }
-      body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-header .text-reset, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-header .text-reset, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-header .text-reset {
-        background-color: #FFB200; }
-      header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item, header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item, header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item {
-        margin: 15px 0px 0px 0px; }
-        header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item a, header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item a, header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item a {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      header .headerCont .brand {
+        display: flex;
+        align-items: center; }
+        header .headerCont .brand a {
+          color: #033FFF;
           text-decoration: none;
+          font-family: 'Bree Serif';
+          font-weight: 400;
+          font-size: 25px;
+          transition: .2s; }
+          body.dark header .headerCont .brand a {
+            color: #FFB200; }
+      header .headerCont .navMenu {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        header .headerCont .navMenu .aMenu {
+          color: #B2B2B2;
+          text-decoration: none;
+          font-family: 'Poppins';
+          font-weight: 300;
+          font-size: 17px;
+          background-color: transparent;
+          transition: 0.2s; }
+          header .headerCont .navMenu .aMenu:hover {
+            color: #033FFF; }
+          header .headerCont .navMenu .aMenu:active {
+            color: #3C4048; }
+          body.dark header .headerCont .navMenu .aMenu {
+            color: white; }
+            body.dark header .headerCont .navMenu .aMenu:hover {
+              color: #FFB200; }
+      header .headerCont .navbar {
+        display: none; }
+      header .headerCont .switchCont .switch {
+        background-color: #3C4048;
+        border-radius: 8px;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        outline: none;
+        transition: .2s; }
+        header .headerCont .switchCont .switch::after {
+          content: "";
+          display: block;
+          width: 24px;
+          height: 24px;
+          position: absolute;
+          background: white;
+          top: 0;
+          left: 0;
+          right: unset;
+          border-radius: 8px;
+          transition: .2s ease all;
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2); }
+        header .headerCont .switchCont .switch.active {
+          background-color: #FFB200;
           color: #3C4048; }
-          body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item a, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item a, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item a {
-            color: white; } }
-
-@media (min-width: 481px) and (max-width: 768px) {
-  header .headerCont .brand {
-    width: 100%;
-    justify-content: center;
-    margin-left: 24px; }
-  header .headerCont .navMenu {
-    display: none; }
-  header .headerCont .searchCont {
-    display: none; }
-  header .headerCont .navbar {
-    width: 20%;
-    display: block; }
-    header .headerCont .navbar .container-fluid {
-      font-family: 'Poppins';
-      font-weight: 300;
-      font-size: 17px;
-      width: 90%;
-      padding: 0px;
+          header .headerCont .switchCont .switch.active::after {
+            right: 0;
+            left: unset; }
+        header .headerCont .switchCont .switch span {
+          width: 24px;
+          height: 24px;
+          line-height: 24px;
+          display: block;
+          background: none;
+          color: white; }
+          body.dark header .headerCont .switchCont .switch span {
+            color: #3C4048; }
+    header .searchCont {
+      width: 178px;
       display: flex;
-      justify-content: center; }
-      header .headerCont .navbar .container-fluid .navbar-toggler {
-        background-color: white; }
-        body.dark header .headerCont .navbar .container-fluid .navbar-toggler {
-          background-color: #FFB200; }
-      body.dark header .headerCont .navbar .container-fluid .offcanvas, body.dark header .headerCont .navbar .container-fluid .offcanvas-end, body.dark header .headerCont .navbar .container-fluid .show {
-        background-color: #3C4048; }
-      body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-header .text-reset, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-header .text-reset, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-header .btn-close, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-header .text-reset {
-        background-color: #FFB200; }
-      header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item, header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item, header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item {
-        margin: 15px 0px 0px 0px; }
-        header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item a, header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item a, header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item a {
-          text-decoration: none;
+      justify-content: space-between;
+      align-items: center; }
+      header .searchCont .fa-solid {
+        color: #B2B2B2;
+        transition: 0.2s; }
+        header .searchCont .fa-solid:hover {
+          color: #033FFF; }
+        header .searchCont .fa-solid:active {
           color: #3C4048; }
-          body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item a, body.dark header .headerCont .navbar .container-fluid .offcanvas-end .offcanvas-body .navbar-nav .nav-item a, body.dark header .headerCont .navbar .container-fluid .show .offcanvas-body .navbar-nav .nav-item a {
-            color: white; } }
+        body.dark header .searchCont .fa-solid {
+          color: white; }
+          body.dark header .searchCont .fa-solid:hover {
+            color: #FFB200; }
+      header .searchCont input {
+        color: #B2B2B2;
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 12px;
+        border-color: #B2B2B2;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px; }
+        header .searchCont input:hover {
+          border-color: #033FFF; }
+        body.dark header .searchCont input {
+          border-color: none;
+          background-color: #3C4048;
+          color: white; }
+          body.dark header .searchCont input:hover {
+            border-color: #FFB200; } }
 
 main {
   width: 100%;
@@ -810,426 +864,602 @@ main {
         main .mainPrds .cc1 .prdsCont div .prdName {
           display: none; }
 
-@media (min-width: 1200px) and (max-width: 1400px) {
-  main .mainCont .main1 {
-    height: 100vh;
-    margin-top: 20px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(3, 63, 255, 0.09);
-    border-radius: 20px;
-    transition: .2s; }
-    body.dark main .mainCont .main1 {
-      background-color: transparent; }
-    main .mainCont .main1 .leftCont {
-      width: 100%;
-      height: 30%; }
-      main .mainCont .main1 .leftCont .slogan {
-        width: 60%;
-        margin-bottom: 0px; }
-        main .mainCont .main1 .leftCont .slogan h3 {
-          font-size: 50px;
-          text-align: center; }
-      main .mainCont .main1 .leftCont .client {
-        display: none; }
-    main .mainCont .main1 .rigthCont {
-      width: 100%;
-      height: 70%;
-      align-items: center; }
-      main .mainCont .main1 .rigthCont div img {
-        width: 520px; }
-      main .mainCont .main1 .rigthCont .backCardTarget {
-        display: none; }
-      main .mainCont .main1 .rigthCont .clientGhost {
-        margin: 20px 0px 20px 0px;
+@media screen and (min-width: 1400px) {
+  main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center; }
+    main .mainCont {
+      width: 90%;
+      height: auto; }
+      main .mainCont .main1 {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%; }
-        main .mainCont .main1 .rigthCont .clientGhost img {
-          display: none; }
-        main .mainCont .main1 .rigthCont .clientGhost div p {
-          margin: 12px 0px 12px 0px;
-          font-family: 'Poppins';
-          font-weight: 300;
-          font-size: 20px;
-          color: #3C4048; }
-        main .mainCont .main1 .rigthCont .clientGhost div button {
-          background-color: transparent;
-          border-radius: 11px;
-          border-color: #033FFF;
-          border-style: solid;
-          border-width: 1px;
-          width: 170px;
-          height: 48px;
-          transition: .2s; }
-          body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
-            border-color: #FFB200;
-            border-width: 1.5px; }
-          main .mainCont .main1 .rigthCont .clientGhost div button a {
-            text-decoration: none;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 80vh; }
+        main .mainCont .main1 .leftCont {
+          width: 51%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          main .mainCont .main1 .leftCont .slogan {
+            width: 100%;
+            margin-bottom: 45px; }
+            main .mainCont .main1 .leftCont .slogan h3 {
+              color: #3C4048;
+              font-family: 'Poppins';
+              font-weight: 700;
+              font-size: 65px;
+              transition: .2s; }
+              body.dark main .mainCont .main1 .leftCont .slogan h3 {
+                color: white; }
+              main .mainCont .main1 .leftCont .slogan h3 span {
+                color: #033FFF;
+                transition: .2s; }
+                body.dark main .mainCont .main1 .leftCont .slogan h3 span {
+                  color: #FFB200; }
+          main .mainCont .main1 .leftCont .client {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center; }
+            main .mainCont .main1 .leftCont .client img {
+              width: 235px;
+              border-radius: 10px; }
+            main .mainCont .main1 .leftCont .client div {
+              width: 50%;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              align-items: flex-start; }
+              main .mainCont .main1 .leftCont .client div p {
+                font-family: 'Poppins';
+                font-weight: 300;
+                font-size: 15px;
+                color: #3C4048;
+                transition: .2s; }
+                body.dark main .mainCont .main1 .leftCont .client div p {
+                  color: white; }
+              main .mainCont .main1 .leftCont .client div button {
+                width: 132px;
+                height: 47px;
+                background-color: transparent;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: #033FFF;
+                transition: 0.2s; }
+                body.dark main .mainCont .main1 .leftCont .client div button {
+                  border-color: white; }
+                main .mainCont .main1 .leftCont .client div button:hover {
+                  transform: scale(0.9); }
+                main .mainCont .main1 .leftCont .client div button:active {
+                  border-color: #3C4048;
+                  color: #FFB200; }
+                main .mainCont .main1 .leftCont .client div button a {
+                  text-decoration: none;
+                  color: #033FFF;
+                  font-family: 'Poppins';
+                  font-weight: 500;
+                  font-size: 13px;
+                  transition: .2s; }
+                  body.dark main .mainCont .main1 .leftCont .client div button a {
+                    color: white; }
+                    body.dark main .mainCont .main1 .leftCont .client div button a:active {
+                      color: #FFB200;
+                      border-color: #FFB200; }
+                  main .mainCont .main1 .leftCont .client div button a:active {
+                    border-color: #3C4048;
+                    color: #3C4048; }
+        main .mainCont .main1 .rigthCont {
+          width: 46%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-end; }
+          main .mainCont .main1 .rigthCont img {
+            width: 620px;
+            z-index: 2;
+            transition: 0.2s; }
+            main .mainCont .main1 .rigthCont img:hover {
+              transform: rotate(10deg); }
+          main .mainCont .main1 .rigthCont .backCardTarget {
+            position: absolute;
+            border-radius: 15px 0px 0px 15px;
+            right: 0px;
+            top: 365px;
+            width: 73%;
+            height: 40%;
+            z-index: -1;
+            background-color: rgba(3, 63, 255, 0.09);
+            transition: .2s; }
+            body.dark main .mainCont .main1 .rigthCont .backCardTarget {
+              background-color: transparent; }
+          main .mainCont .main1 .rigthCont .clientGhost {
+            display: none; }
+      main .mainCont .main2 {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: row; }
+        main .mainCont .main2 .leftCont2 {
+          width: 35%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; }
+          main .mainCont .main2 .leftCont2 img {
+            width: 310px;
+            z-index: 2; }
+          main .mainCont .main2 .leftCont2 .backCardTarget2 {
+            position: absolute;
+            border-radius: 0px 15px 15px 0px;
+            left: 0px;
+            z-index: -1;
+            width: 20%;
+            height: 75%;
+            background-color: #033FFF;
+            transition: .2s; }
+            body.dark main .mainCont .main2 .leftCont2 .backCardTarget2 {
+              background-color: transparent; }
+        main .mainCont .main2 .rigthCont2 {
+          width: 65%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          main .mainCont .main2 .rigthCont2 .slogan2 {
+            font-family: 'Poppins';
+            font-weight: 700;
+            font-size: 45px;
+            color: #3C4048;
+            transition: .2s; }
+            body.dark main .mainCont .main2 .rigthCont2 .slogan2 {
+              color: white; }
+            main .mainCont .main2 .rigthCont2 .slogan2 span {
+              color: #033FFF;
+              transition: .2s; }
+              body.dark main .mainCont .main2 .rigthCont2 .slogan2 span {
+                color: #FFB200; }
+          main .mainCont .main2 .rigthCont2 p {
             font-family: 'Poppins';
             font-weight: 300;
-            font-size: 15px;
-            color: #033FFF;
+            font-size: 25px;
+            color: #3C4048;
             transition: .2s; }
-            body.dark main .mainCont .main1 .rigthCont .clientGhost div button a {
-              color: #FFB200; }
-  main .mainCont .main2 {
-    height: 90vh; }
-    main .mainCont .main2 .leftCont2 .backCardTarget2 {
-      display: none; }
-  main .simulatorMainCont .prestamoInmediato {
-    background-position-y: -190px; }
-    body.dark main .simulatorMainCont .prestamoInmediato {
-      background-position-y: -50px; }
-  main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
-    width: 400px;
-    height: 420px; }
-  main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
-    width: 400px;
-    height: 420px; } }
-
-@media (min-width: 1025px) and (max-width: 1199px) {
-  main .mainCont .main1 {
-    height: 100vh;
-    margin-top: 20px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(3, 63, 255, 0.09);
-    border-radius: 20px;
-    transition: .2s; }
-    body.dark main .mainCont .main1 {
-      background-color: transparent; }
-    main .mainCont .main1 .leftCont {
-      width: 100%;
-      height: 30%; }
-      main .mainCont .main1 .leftCont .slogan {
-        margin-top: 30px;
-        width: 90%; }
-        main .mainCont .main1 .leftCont .slogan h3 {
-          font-size: 50px;
-          text-align: center; }
-      main .mainCont .main1 .leftCont .client {
-        display: none; }
-    main .mainCont .main1 .rigthCont {
-      width: 100%;
-      height: 70%;
-      align-items: center; }
-      main .mainCont .main1 .rigthCont div img {
-        width: 520px; }
-      main .mainCont .main1 .rigthCont .backCardTarget {
-        display: none; }
-      main .mainCont .main1 .rigthCont .clientGhost {
-        margin: 20px 0px 20px 0px;
+            body.dark main .mainCont .main2 .rigthCont2 p {
+              color: white; }
+          main .mainCont .main2 .rigthCont2 button {
+            width: 300px;
+            height: 55px;
+            border-radius: 5px;
+            background-color: #033FFF;
+            border-style: none;
+            transition: 0.2s; }
+            body.dark main .mainCont .main2 .rigthCont2 button {
+              background-color: #FFB200; }
+            main .mainCont .main2 .rigthCont2 button:hover {
+              transform: scale(0.9); }
+            main .mainCont .main2 .rigthCont2 button:active {
+              background-color: #3C4048;
+              color: white; }
+            main .mainCont .main2 .rigthCont2 button a {
+              text-decoration: none;
+              color: white;
+              font-family: 'Poppins';
+              font-weight: 300;
+              font-size: 18px;
+              transition: .2s; }
+              body.dark main .mainCont .main2 .rigthCont2 button a {
+                color: #3C4048;
+                font-weight: 500; }
+      main .mainCont .main3 {
+        width: 100%;
+        height: 50vh;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 40%; }
-        main .mainCont .main1 .rigthCont .clientGhost img {
-          display: none; }
-        main .mainCont .main1 .rigthCont .clientGhost div p {
-          margin: 12px 0px 12px 0px;
-          font-family: 'Poppins';
-          font-weight: 300;
-          font-size: 20px;
-          color: #3C4048; }
-        main .mainCont .main1 .rigthCont .clientGhost div button {
-          background-color: transparent;
-          border-radius: 11px;
-          border-color: #033FFF;
-          border-style: solid;
-          border-width: 1px;
-          width: 170px;
-          height: 48px;
-          transition: .2s; }
-          body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
-            border-color: #FFB200;
-            border-width: 1.5px; }
-          main .mainCont .main1 .rigthCont .clientGhost div button a {
-            text-decoration: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        main .mainCont .main3 .main3Cont {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center; }
+          main .mainCont .main3 .main3Cont h4 {
             font-family: 'Poppins';
-            font-weight: 300;
-            font-size: 15px;
-            color: #033FFF;
+            font-weight: 700;
+            font-size: 45px;
+            color: #3C4048;
             transition: .2s; }
-            body.dark main .mainCont .main1 .rigthCont .clientGhost div button a {
-              color: #FFB200; }
-  main .mainCont .main2 {
-    height: 90vh; }
-    main .mainCont .main2 .leftCont2 div img {
-      width: 260px; }
-    main .mainCont .main2 .leftCont2 .backCardTarget2 {
-      display: none; }
-  main .mainCont .main3 .main3Cont section div {
-    width: 210px;
-    height: 145px;
-    transform: scale(0.98); }
-  main .simulatorMainCont .prestamoInmediato {
-    background-position-y: -190px; }
-    body.dark main .simulatorMainCont .prestamoInmediato {
-      background-position-y: -50px; }
-  main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
-    transform: scale(0.95); }
-  main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
-    transform: scale(0.95); }
-  body.dark main .mainPrds .cc1 .cc1a {
-    background-position-y: -70px; }
-  main .mainPrds .cc1 .prdsCont {
-    transform: scale(0.91); } }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  main .mainCont .main1 {
-    height: 100vh;
-    margin-top: 20px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(3, 63, 255, 0.09);
-    border-radius: 20px;
-    transition: .2s; }
-    body.dark main .mainCont .main1 {
-      background-color: transparent; }
-    main .mainCont .main1 .leftCont {
-      width: 100%;
-      height: 30%; }
-      main .mainCont .main1 .leftCont .slogan {
-        margin-top: 30px;
-        width: 90%; }
-        main .mainCont .main1 .leftCont .slogan h3 {
-          font-size: 50px;
-          text-align: center; }
-      main .mainCont .main1 .leftCont .client {
-        display: none; }
-    main .mainCont .main1 .rigthCont {
-      width: 100%;
-      height: 70%;
-      align-items: center; }
-      main .mainCont .main1 .rigthCont div img {
-        width: 520px; }
-      main .mainCont .main1 .rigthCont .backCardTarget {
-        display: none; }
-      main .mainCont .main1 .rigthCont .clientGhost {
-        margin: 20px 0px 20px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 72%; }
-        main .mainCont .main1 .rigthCont .clientGhost img {
-          display: none; }
-        main .mainCont .main1 .rigthCont .clientGhost div p {
-          margin: 12px 0px 12px 0px;
+            body.dark main .mainCont .main3 .main3Cont h4 {
+              color: white; }
+            main .mainCont .main3 .main3Cont h4 span {
+              color: #033FFF;
+              transition: .2s; }
+              body.dark main .mainCont .main3 .main3Cont h4 span {
+                color: #FFB200; }
+          main .mainCont .main3 .main3Cont section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; }
+            main .mainCont .main3 .main3Cont section div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 240px;
+              height: 160px;
+              border-radius: 13px;
+              background-color: #033FFF;
+              transition: 0.2s; }
+              body.dark main .mainCont .main3 .main3Cont section div {
+                background-color: #FFB200; }
+              main .mainCont .main3 .main3Cont section div a {
+                height: 70%;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly; }
+                main .mainCont .main3 .main3Cont section div a .fa-solid {
+                  color: white;
+                  transition: .2s; }
+                  body.dark main .mainCont .main3 .main3Cont section div a .fa-solid {
+                    color: #3C4048; }
+                main .mainCont .main3 .main3Cont section div a h6 {
+                  font-family: 'Poppins';
+                  font-weight: 300;
+                  font-size: 20px;
+                  text-align: center;
+                  color: white;
+                  transition: .2s; }
+                  body.dark main .mainCont .main3 .main3Cont section div a h6 {
+                    color: #3C4048;
+                    font-weight: 500; }
+              main .mainCont .main3 .main3Cont section div:hover {
+                transform: scale(0.9); }
+              main .mainCont .main3 .main3Cont section div:active {
+                background-color: #3C4048; }
+    main .simulatorMainCont {
+      width: 90%;
+      height: auto; }
+      main .simulatorMainCont .prestamoInmediato {
+        width: 100%;
+        height: 420px;
+        background-image: url(/img/papaYbebe.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -380px;
+        background-position-x: center;
+        border-radius: 0px 0px 18px 18px;
+        transition: .2s; }
+        body.dark main .simulatorMainCont .prestamoInmediato {
+          background-image: url(/img/casaNueva.webp);
+          background-position-y: -255px; }
+      main .simulatorMainCont .simulatordownerCont {
+        width: 100%;
+        height: 150vh; }
+        main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
+          margin: 15px 0px 15px 0px;
           font-family: 'Poppins';
-          font-weight: 300;
-          font-size: 20px;
-          color: #3C4048; }
-        main .mainCont .main1 .rigthCont .clientGhost div button {
-          background-color: transparent;
-          border-radius: 11px;
-          border-color: #033FFF;
-          border-style: solid;
-          border-width: 1px;
-          width: 170px;
-          height: 48px;
+          font-weight: 700;
+          font-size: 45px;
+          text-align: center;
+          color: #3C4048;
           transition: .2s; }
-          body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
-            border-color: #FFB200;
-            border-width: 1.5px; }
-          main .mainCont .main1 .rigthCont .clientGhost div button a {
-            text-decoration: none;
-            font-family: 'Poppins';
-            font-weight: 300;
-            font-size: 15px;
-            color: #033FFF;
-            transition: .2s; }
-            body.dark main .mainCont .main1 .rigthCont .clientGhost div button a {
-              color: #FFB200; }
-  main .mainCont .main2 {
-    height: 90vh; }
-    main .mainCont .main2 .leftCont2 div img {
-      width: 260px; }
-    main .mainCont .main2 .leftCont2 .backCardTarget2 {
-      display: none; }
-    main .mainCont .main2 .rigthCont2 {
-      transform: scale(0.78); }
-  main .mainCont .main3 {
-    margin-bottom: 25px; }
-    main .mainCont .main3 .main3Cont section {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      justify-items: center;
-      align-content: center; }
-      main .mainCont .main3 .main3Cont section div {
-        margin: 4px;
-        transform: scale(0.9); }
-  main .simulatorMainCont .prestamoInmediato {
-    height: 250px;
-    background-position-y: -190px; }
-    body.dark main .simulatorMainCont .prestamoInmediato {
-      background-position-y: -50px; }
-  main .simulatorMainCont .simulatordownerCont {
-    height: 150vh; }
-    main .simulatorMainCont .simulatordownerCont .lowContainer {
-      flex-direction: column;
-      align-items: center; }
-      main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
-        transform: scale(0.9); }
-        main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont p {
-          margin: 0px; }
-      main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
-        transform: scale(0.9); }
-  main .mainPrds {
-    height: 80vh; }
-    main .mainPrds .cc1 .cc1a {
-      height: 250px; }
-      body.dark main .mainPrds .cc1 .cc1a {
-        background-position-y: -70px; }
-    main .mainPrds .cc1 .prdsCont {
-      transform: scale(0.8); }
-      main .mainPrds .cc1 .prdsCont div {
-        margin: 0px 7px 0px 7px; }
-        main .mainPrds .cc1 .prdsCont div i {
-          transform: scale(0.7); } }
-
-@media (min-width: 481px) and (max-width: 768px) {
-  main .mainCont .main1 {
-    height: 80vh;
-    margin-top: 20px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(3, 63, 255, 0.09);
-    border-radius: 20px;
-    transition: .2s; }
-    body.dark main .mainCont .main1 {
-      background-color: transparent; }
-    main .mainCont .main1 .leftCont {
-      width: 100%;
-      height: 30%; }
-      main .mainCont .main1 .leftCont .slogan {
-        margin-top: 30px;
-        width: 90%; }
-        main .mainCont .main1 .leftCont .slogan h3 {
-          font-size: 30px;
-          text-align: center; }
-      main .mainCont .main1 .leftCont .client {
-        display: none; }
-    main .mainCont .main1 .rigthCont {
-      width: 100%;
-      height: 60%;
-      align-items: center;
-      justify-content: space-between; }
-      main .mainCont .main1 .rigthCont div img {
-        width: 320px; }
-      main .mainCont .main1 .rigthCont .backCardTarget {
-        display: none; }
-      main .mainCont .main1 .rigthCont .clientGhost {
-        margin: 20px 0px 20px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 72%; }
-        main .mainCont .main1 .rigthCont .clientGhost img {
-          display: none; }
-        main .mainCont .main1 .rigthCont .clientGhost div p {
-          margin: 12px 0px 12px 0px;
-          font-family: 'Poppins';
-          font-weight: 300;
-          font-size: 15px;
-          color: #3C4048; }
-          body.dark main .mainCont .main1 .rigthCont .clientGhost div p {
+          body.dark main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
             color: white; }
-        main .mainCont .main1 .rigthCont .clientGhost div button {
-          background-color: transparent;
-          border-radius: 11px;
-          border-color: #033FFF;
-          border-style: solid;
-          border-width: 1px;
-          width: 170px;
-          height: 48px;
+        main .simulatorMainCont .simulatordownerCont .oddDescripction p {
+          margin: 0px 0px 22px 0px;
+          font-family: 'Poppins';
+          font-weight: 300;
+          font-size: 18px;
+          text-align: center;
+          color: #3C4048;
           transition: .2s; }
-          body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
-            border-color: #FFB200;
-            border-width: 1.5px; }
-          main .mainCont .main1 .rigthCont .clientGhost div button a {
-            text-decoration: none;
-            font-family: 'Poppins';
-            font-weight: 300;
-            font-size: 15px;
-            color: #033FFF;
+          body.dark main .simulatorMainCont .simulatordownerCont .oddDescripction p {
+            color: white; }
+        main .simulatorMainCont .simulatordownerCont .lowContainer {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+            width: 550px;
+            height: 520px;
+            border-radius: 15px;
+            background-color: rgba(3, 63, 255, 0.09);
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
             transition: .2s; }
-            body.dark main .mainCont .main1 .rigthCont .clientGhost div button a {
-              color: #FFB200; }
-  main .mainCont .main2 {
-    height: 100vh;
-    flex-direction: column;
-    align-items: center; }
-    main .mainCont .main2 .leftCont2 {
-      margin: 40px 0px 40px 0px; }
-      main .mainCont .main2 .leftCont2 div img {
-        width: 160px; }
-      main .mainCont .main2 .leftCont2 .backCardTarget2 {
-        display: none; }
-    main .mainCont .main2 .rigthCont2 {
-      align-items: center;
-      width: 100%; }
-      main .mainCont .main2 .rigthCont2 .slogan2 {
-        font-size: 30px;
-        text-align: center; }
-      main .mainCont .main2 .rigthCont2 p {
+            body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+              background-color: transparent;
+              border-style: solid;
+              border-color: white;
+              border-width: 1px; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect h4 {
+              font-family: 'Poppins';
+              font-weight: 500;
+              font-size: 25px;
+              text-align: center;
+              color: #3C4048;
+              transition: .2s; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect h4 {
+                color: white; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form {
+              max-width: 365px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; }
+              main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .stdOddJs {
+                width: 100%;
+                height: 30px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #033FFF;
+                font-family: 'Poppins';
+                font-weight: 300;
+                font-size: 15px;
+                transition: .2s; }
+                body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .stdOddJs {
+                  border-color: white;
+                  background-color: transparent;
+                  color: white;
+                  font-weight: 500; }
+                body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .stdOddJs option {
+                  background-color: #3C4048; }
+              main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont {
+                display: flex;
+                flex-direction: row;
+                justify-items: center;
+                align-items: center;
+                width: 360px;
+                height: 30px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #033FFF;
+                transition: .2s; }
+                body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont {
+                  border-color: white; }
+                main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont .stdOddJs2 {
+                  width: 90%;
+                  height: 100%;
+                  border-radius: 5px 0px 0px 5px;
+                  border-style: none;
+                  font-family: 'Poppins';
+                  font-weight: 300;
+                  font-size: 15px;
+                  transition: .2s; }
+                  body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont .stdOddJs2 {
+                    background-color: transparent;
+                    color: white;
+                    font-weight: 500;
+                    border-right: solid 1px white; }
+                main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont p {
+                  text-align: center;
+                  width: 10%;
+                  font-family: 'Poppins';
+                  font-weight: 500;
+                  font-size: 15px;
+                  transition: .2s;
+                  color: #3C4048; }
+                  body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont p {
+                    color: white;
+                    font-weight: 500; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button {
+              width: 170px;
+              height: 36px;
+              border-radius: 5px;
+              border-style: none;
+              background-color: #033FFF;
+              color: white;
+              font-family: 'Poppins';
+              font-weight: 300;
+              font-size: 15px;
+              transition: 0.2s; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button {
+                background-color: #FFB200;
+                color: #3C4048;
+                font-weight: 500; }
+              main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button:hover {
+                transform: scale(0.9); }
+              main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect div button:active {
+                background-color: #3C4048; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+            width: 550px;
+            height: 520px;
+            border-radius: 15px;
+            background-color: rgba(3, 63, 255, 0.09);
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: .2s; }
+            body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+              background-color: transparent;
+              border-style: solid;
+              border-color: white;
+              border-width: 1px; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect h4 {
+              font-family: 'Poppins';
+              font-weight: 500;
+              font-size: 25px;
+              text-align: center;
+              color: #3C4048;
+              transition: .2s; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect h4 {
+                color: white; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs {
+              width: 80%;
+              height: 40%;
+              background-color: white;
+              border-radius: 15px;
+              border-style: solid;
+              border-color: #033FFF;
+              border-width: 1px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: .2s; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs {
+                background-color: transparent;
+                border-color: white; }
+              main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs span {
+                width: auto;
+                height: auto;
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 45px;
+                color: #3C4048;
+                transition: .2s; }
+                body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs span {
+                  color: #FFB200;
+                  font-weight: 700; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect p {
+              font-family: 'Poppins';
+              font-weight: 300;
+              font-size: 13px;
+              color: #3C4048;
+              transition: .2s; }
+              body.dark main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect p {
+                color: white; }
+        main .simulatorMainCont .simulatordownerCont .downedCont {
+          margin: 30px 0px;
+          font-family: 'Poppins';
+          color: #3C4048;
+          width: 100%;
+          height: 80vh;
+          display: flex;
+          flex-direction: column; }
+          main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido {
+            margin: 15px 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+            main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido h3 {
+              text-align: center;
+              font-weight: 700;
+              color: #3C4048;
+              font-size: 50px; }
+            main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido .recomendCont {
+              width: 400px;
+              height: 280px;
+              background-color: rgba(3, 63, 255, 0.09);
+              border-radius: 15px; }
+              main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido .recomendCont .prestSugCont {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center; }
+                main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido .recomendCont .prestSugCont h4 {
+                  font-size: 38px; }
+                main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido .recomendCont .prestSugCont p {
+                  font-size: 20px; }
+          main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont {
+            margin: 15px 0px;
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center; }
+            main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont .prestSug {
+              width: 400px;
+              height: 280px;
+              background-color: rgba(3, 63, 255, 0.09);
+              border-radius: 15px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; }
+              main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont .prestSug h4 {
+                font-size: 30px; }
+              main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont .prestSug p {
+                font-size: 17px; }
+    main .mainPrds {
+      width: 90%;
+      height: 100vh; }
+      main .mainPrds .cc1 .cc1a {
+        width: 100%;
+        height: 420px;
+        background-image: url(/img/girl.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        border-radius: 0px 0px 18px 18px;
+        transition: .2s; }
+        body.dark main .mainPrds .cc1 .cc1a {
+          background-image: url(/img/womenCreditCard.jpg);
+          background-position-y: -110px; }
+      main .mainPrds .cc1 .cc1b .cc1ba {
         text-align: center;
-        font-size: 20px;
-        margin: 0px; }
-  main .mainCont .main3 {
-    margin-bottom: 25px; }
-    main .mainCont .main3 .main3Cont h4 {
-      font-size: 30px; }
-    main .mainCont .main3 .main3Cont section {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      justify-items: center;
-      align-content: center; }
-      main .mainCont .main3 .main3Cont section div {
-        margin: 4px;
-        transform: scale(0.8); }
-  main .simulatorMainCont .prestamoInmediato {
-    height: 120px;
-    background-position-y: -110px; }
-    body.dark main .simulatorMainCont .prestamoInmediato {
-      background-position-y: -50px; }
-  main .simulatorMainCont .simulatordownerCont {
-    height: 150vh; }
-    main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
-      font-size: 30px; }
-    main .simulatorMainCont .simulatordownerCont .oddDescripction p {
-      font-size: 18px; }
-    main .simulatorMainCont .simulatordownerCont .lowContainer {
-      flex-direction: column;
-      align-items: center; }
-      main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
-        transform: scale(0.72); }
-        main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont p {
-          margin: 0px; }
-      main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
-        transform: scale(0.72); }
-  main .mainPrds {
-    height: 110vh; }
-    main .mainPrds .cc1 .cc1a {
-      height: 120px; }
-      body.dark main .mainPrds .cc1 .cc1a {
-        background-position-y: -50px; }
-    main .mainPrds .cc1 .cc1b .cc1ba {
-      font-size: 30px; }
-    main .mainPrds .cc1 .cc1b .cc1bb {
-      font-size: 18px; }
-    main .mainPrds .cc1 .prdsCont {
-      width: 100%;
-      flex-direction: column;
-      align-items: center; }
-      main .mainPrds .cc1 .prdsCont div {
-        margin: 7px 0px 7px 0px; }
-        main .mainPrds .cc1 .prdsCont div i {
-          transform: scale(0.7); } }
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 45px;
+        color: #3C4048;
+        margin: 15px 0px 15px 0px;
+        transition: .2s; }
+        body.dark main .mainPrds .cc1 .cc1b .cc1ba {
+          color: white; }
+      main .mainPrds .cc1 .cc1b .cc1bb {
+        text-align: center;
+        font-family: 'Poppins';
+        font-weight: 300;
+        font-size: 18px;
+        color: #3C4048;
+        margin: 0px 0px 20px 0px;
+        transition: .2s; }
+        body.dark main .mainPrds .cc1 .cc1b .cc1bb {
+          color: white; }
+      main .mainPrds .cc1 .prdsCont {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+        margin: 50px 0px 70px 0px; }
+        main .mainPrds .cc1 .prdsCont div {
+          padding: 10px;
+          width: 261px;
+          height: 192px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #033FFF;
+          border-radius: 22px;
+          transition: .2s; }
+          main .mainPrds .cc1 .prdsCont div:hover {
+            transform: scale(0.9); }
+          body.dark main .mainPrds .cc1 .prdsCont div {
+            background-color: transparent;
+            border-style: solid;
+            border-color: white;
+            border-width: 1px; }
+          main .mainPrds .cc1 .prdsCont div i {
+            color: white; }
+          main .mainPrds .cc1 .prdsCont div h6 {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-size: 19px;
+            color: white; }
+          main .mainPrds .cc1 .prdsCont div .prdName {
+            display: none; } }
 
 footer {
   width: 100%;
@@ -1319,22 +1549,91 @@ footer {
           footer .footerCont .columnsFoot .ColumnContApp div a:active {
             color: rgba(3, 63, 255, 0.09); }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  footer .footerCont .columnsFoot {
-    text-align: center;
-    transform: scale(0.9); } }
-
-@media (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 1400px) {
   footer {
-    height: 120vh; }
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
     footer .footerCont {
-      width: 80%;
-      flex-direction: column;
-      padding: 0px; }
+      padding-top: 18px;
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
       footer .footerCont .columnsFoot {
-        width: 100%;
-        text-align: center;
-        transform: scale(0.9); }
-        footer .footerCont .columnsFoot .ColumnContRedes div {
+        width: 33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        footer .footerCont .columnsFoot h5 {
+          font-family: 'Poppins';
+          font-weight: 500;
+          font-size: 25px;
+          color: #3C4048;
+          transition: .2s; }
+          body.dark footer .footerCont .columnsFoot h5 {
+            color: white; }
+        footer .footerCont .columnsFoot a {
+          margin: 12px;
+          text-decoration: none;
+          font-family: 'Poppins';
+          font-weight: 300;
+          font-size: 17px;
+          transition: 0.2s;
+          color: #3C4048; }
+          body.dark footer .footerCont .columnsFoot a {
+            color: white; }
+            body.dark footer .footerCont .columnsFoot a:hover {
+              color: #FFB200; }
+          footer .footerCont .columnsFoot a:hover {
+            color: #033FFF; }
+          footer .footerCont .columnsFoot a:active {
+            color: rgba(3, 63, 255, 0.09); }
+        footer .footerCont .columnsFoot .ColumnCont {
           display: flex;
-          flex-direction: column; } }
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 25px; }
+          footer .footerCont .columnsFoot .ColumnCont a {
+            color: #3C4048;
+            transition: 0.2s; }
+            footer .footerCont .columnsFoot .ColumnCont a:hover {
+              color: #033FFF; }
+            footer .footerCont .columnsFoot .ColumnCont a:active {
+              color: rgba(3, 63, 255, 0.09); }
+        footer .footerCont .columnsFoot .ColumnContRedes {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 25px; }
+          footer .footerCont .columnsFoot .ColumnContRedes div a {
+            color: #3C4048;
+            transition: 0.2s; }
+            body.dark footer .footerCont .columnsFoot .ColumnContRedes div a {
+              color: white; }
+              body.dark footer .footerCont .columnsFoot .ColumnContRedes div a:hover {
+                color: #FFB200; }
+            footer .footerCont .columnsFoot .ColumnContRedes div a:hover {
+              color: #033FFF; }
+            footer .footerCont .columnsFoot .ColumnContRedes div a:active {
+              color: rgba(3, 63, 255, 0.09); }
+        footer .footerCont .columnsFoot .ColumnContApp {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          footer .footerCont .columnsFoot .ColumnContApp div a {
+            color: #3C4048;
+            transition: 0.2s; }
+            body.dark footer .footerCont .columnsFoot .ColumnContApp div a {
+              color: white; }
+              body.dark footer .footerCont .columnsFoot .ColumnContApp div a:hover {
+                color: #FFB200; }
+            footer .footerCont .columnsFoot .ColumnContApp div a:hover {
+              color: #033FFF; }
+            footer .footerCont .columnsFoot .ColumnContApp div a:active {
+              color: rgba(3, 63, 255, 0.09); } }
