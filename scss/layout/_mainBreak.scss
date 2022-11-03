@@ -784,6 +784,10 @@
                             p{
                                 font-weight: 300;
                                 width: 80%;
+                                transition: .2s;
+                                body.dark & {
+                                    color: $lighMode;
+                                }
                             }
                             button{
                                 width: 200px;
@@ -792,10 +796,17 @@
                                 border-radius: 10px;
                                 border-style: solid;
                                 border-width: 1px;
-                                border-color: #033FFF;
+                                border-color: $blue;
                                 transition: 0.2s;
+                                body.dark & {
+                                    border-color: $lighMode;
+                                }
                                 a{
                                     text-decoration: none;
+                                    transition: .2s;
+                                    body.dark & {
+                                        color: $lighMode;
+                                    }
                                 }
                             }
                         }

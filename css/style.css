@@ -280,6 +280,26 @@ header {
   header .headerCont .navbar {
     display: block;
     width: 20%; }
+    body.dark header .headerCont .navbar .container-fluid .navbar-toggler {
+      background-color: #FFB200; }
+    header .headerCont .navbar .container-fluid .offcanvas {
+      font-family: 'Poppins'; }
+      body.dark header .headerCont .navbar .container-fluid .offcanvas {
+        background-color: #3C4048; }
+      header .headerCont .navbar .container-fluid .offcanvas .offcanvas-header .btn-close {
+        transition: .2s; }
+        body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-header .btn-close {
+          background-color: #FFB200; }
+      header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav li {
+        margin: 13px 0px; }
+        header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav li a {
+          text-decoration: none;
+          color: #3C4048;
+          font-weight: 300;
+          font-size: 22px;
+          transition: .2s; }
+          body.dark header .headerCont .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav li a {
+            color: #FFB200; }
   header .headerCont .searchCont {
     display: none; } }
 
@@ -1517,7 +1537,10 @@ main {
             font-family: 'Poppins'; }
             main .mainCont .main1 .rigthCont .clientGhost div p {
               font-weight: 300;
-              width: 80%; }
+              width: 80%;
+              transition: .2s; }
+              body.dark main .mainCont .main1 .rigthCont .clientGhost div p {
+                color: #FFB200; }
             main .mainCont .main1 .rigthCont .clientGhost div button {
               width: 200px;
               height: 57px;
@@ -1527,8 +1550,13 @@ main {
               border-width: 1px;
               border-color: #033FFF;
               transition: 0.2s; }
+              body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
+                border-color: #FFB200; }
               main .mainCont .main1 .rigthCont .clientGhost div button a {
-                text-decoration: none; }
+                text-decoration: none;
+                transition: .2s; }
+                body.dark main .mainCont .main1 .rigthCont .clientGhost div button a {
+                  color: #FFB200; }
     main .mainCont .main2 {
       width: 90%; }
       main .mainCont .main2 .leftCont2 div img {

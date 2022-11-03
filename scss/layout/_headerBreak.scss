@@ -171,6 +171,44 @@
             .navbar{
                 display: block;
                 width: 20%;
+                .container-fluid{
+                    .navbar-toggler{
+                        body.dark & {
+                            background-color: $lighMode;
+                        }
+                    }
+                    .offcanvas{
+                        font-family: 'Poppins';
+                        body.dark & {
+                            background-color: $grease;
+                        }
+                        .offcanvas-header{
+                            .btn-close{
+                                transition: .2s;
+                                body.dark & {
+                                    background-color: $lighMode;
+                                }
+                            }
+                        }
+                        .offcanvas-body{
+                            .navbar-nav{
+                                li{
+                                    margin: 13px 0px;
+                                    a{
+                                        text-decoration: none;
+                                        color: $grease;
+                                        font-weight: 300;
+                                        font-size: 22px;
+                                        transition: .2s;
+                                        body.dark & {
+                                            color: $lighMode;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .searchCont{
                 display: none;
