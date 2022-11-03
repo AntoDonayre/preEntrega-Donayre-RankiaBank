@@ -268,6 +268,21 @@ header {
           body.dark header .searchCont input:hover {
             border-color: #FFB200; } }
 
+@media screen and (min-width: 767px) and (max-width: 1399px) {
+  header .headerCont .brand {
+    padding-left: 8%;
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  header .headerCont .navMenu {
+    display: none; }
+  header .headerCont .navbar {
+    display: block;
+    width: 20%; }
+  header .headerCont .searchCont {
+    display: none; } }
+
 main {
   width: 100%;
   height: auto;
@@ -1461,6 +1476,81 @@ main {
           main .mainPrds .cc1 .prdsCont div .prdName {
             display: none; } }
 
+@media screen and (min-width: 767px) and (max-width: 1399px) {
+  main .mainCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    main .mainCont .main1 {
+      height: 100vh;
+      background-color: rgba(3, 63, 255, 0.09);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      main .mainCont .main1 .leftCont {
+        width: 90%; }
+        main .mainCont .main1 .leftCont .slogan {
+          margin: 20px 0px; }
+          main .mainCont .main1 .leftCont .slogan h3 {
+            font-size: 50px;
+            text-align: center; }
+        main .mainCont .main1 .leftCont .client {
+          display: none; }
+      main .mainCont .main1 .rigthCont {
+        width: 100%;
+        justify-content: center;
+        align-items: center; }
+        main .mainCont .main1 .rigthCont div {
+          margin-bottom: 22px; }
+        main .mainCont .main1 .rigthCont .backCardTarget {
+          display: none; }
+        main .mainCont .main1 .rigthCont .clientGhost {
+          margin: 20px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          main .mainCont .main1 .rigthCont .clientGhost img {
+            display: none; }
+          main .mainCont .main1 .rigthCont .clientGhost div {
+            width: 90%;
+            font-family: 'Poppins'; }
+            main .mainCont .main1 .rigthCont .clientGhost div p {
+              font-weight: 300;
+              width: 80%; }
+            main .mainCont .main1 .rigthCont .clientGhost div button {
+              width: 200px;
+              height: 57px;
+              background-color: transparent;
+              border-radius: 10px;
+              border-style: solid;
+              border-width: 1px;
+              border-color: #033FFF;
+              transition: 0.2s; }
+              main .mainCont .main1 .rigthCont .clientGhost div button a {
+                text-decoration: none; }
+    main .mainCont .main2 {
+      width: 90%; }
+      main .mainCont .main2 .leftCont2 div img {
+        width: 200px; }
+      main .mainCont .main2 .leftCont2 .backCardTarget2 {
+        display: none; }
+      main .mainCont .main2 .rigthCont2 .slogan2 {
+        font-size: 35px; }
+      main .mainCont .main2 .rigthCont2 p {
+        font-size: 17px; }
+    main .mainCont .main3 .main3Cont {
+      width: 90%; }
+      main .mainCont .main3 .main3Cont section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        place-items: center;
+        grid-gap: 5px; }
+        main .mainCont .main3 .main3Cont section div {
+          width: 260px;
+          height: 150px; } }
+
 footer {
   width: 100%;
   height: 55vh;
@@ -1637,3 +1727,7 @@ footer {
               color: #033FFF; }
             footer .footerCont .columnsFoot .ColumnContApp div a:active {
               color: rgba(3, 63, 255, 0.09); } }
+
+@media screen and (min-width: 767px) and (max-width: 1399px) {
+  footer {
+    text-align: center; } }
