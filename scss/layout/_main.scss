@@ -76,14 +76,15 @@
                                 color: $white;
                                 transition: 0.2s;
                                 body.dark & {
-                                    border-color: $white;
+                                    background-color: $lighMode;
+                                    color: $grease;
                                 }
                                 &:hover{
                                     transform: scale(0.9);
                                 }
                                 &:active{
-                                    border-color: $grease;
-                                    color: $lighMode;
+                                    background-color: $grease;
+                                    color: $white;
                                 }
                             }
                         }
@@ -189,9 +190,15 @@
                         border-radius: 5px;
                         background-color: $blue;
                         border-style: none;
+                        color: $white;
+                        font-family: 'Poppins';
+                        font-weight: 300;
+                        font-size: 18px;
                         transition: 0.2s;
                         body.dark & {
                             background-color: $lighMode;
+                            color: $grease;
+                            font-weight: 500;
                         }
                         &:hover{
                             transform: scale(0.9);
@@ -199,18 +206,6 @@
                         &:active{
                             background-color: $grease;
                             color: $white;
-                        }
-                        a{
-                            text-decoration: none;
-                            color: $white;
-                            font-family: 'Poppins';
-                            font-weight: 300;
-                            font-size: 18px;
-                            transition: .2s;
-                            body.dark & {
-                                color: $grease;
-                                font-weight: 500;
-                            }
                         }
                     }
                 }
@@ -323,7 +318,7 @@
             }
             .simulatordownerCont{
                 width: 100%;
-                height: 150vh;
+                height: auto;
                 .oddTittle{
                     h2{
                         margin: 15px 0px 15px 0px;
@@ -562,7 +557,7 @@
                     color: $grease;
                     width: 100%;
                     height: 80vh;
-                    display: flex;
+                    display: none;
                     flex-direction: column;
                     .prestSugerido{
                         margin: 15px 0px;

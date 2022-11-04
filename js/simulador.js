@@ -29,6 +29,12 @@ const inputForm = document.getElementById("inputForm")
 
 inputForm.addEventListener("submit", (e) => {
     e.preventDefault()
+
+    //Activa display en downedCont de html
+    let btnActive = document.querySelector('#downedCont')
+    console.log(btnActive)
+    btnActive.style.display = "flex";
+
     const tipoMoneda=document.getElementById("tipoMoneda").value;
     const montoPrestamo=Number(document.getElementById("montoPrestamo").value);
     const cuotasCliente=Number(document.getElementById("cuotasCliente").value);
@@ -46,6 +52,8 @@ inputForm.addEventListener("submit", (e) => {
     console.log(p1)
     let p2 = {monto: montoPrestamo*1.20, cuotas: cuotasCliente, tasa: interesAnual + "%", cuota: Math.round(cuotaMensual*1.20),}
     console.log(p2)
+
+    
 
     if(tipoMoneda.toLowerCase() =="soles"){
             // console.log("s/"+cuotaMensual)
@@ -79,3 +87,4 @@ inputForm.addEventListener("submit", (e) => {
             document.getElementById("cuotaPR2").innerHTML= "<p>" + cuotasCliente + " pagos de " + "$" + p2.cuota + " al mes" + "</p>"
         }
 })
+

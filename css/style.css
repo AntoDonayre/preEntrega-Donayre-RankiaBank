@@ -16,6 +16,8 @@ body {
       width: 90%;
       border-style: solid;
       border-color: #B2B2B2; }
+    body .bodyCont .downQuery {
+      margin: 20px 0px; }
 
 @media screen and (min-width: 1300px) {
   header {
@@ -213,12 +215,13 @@ body {
                 color: white;
                 transition: 0.2s; }
                 body.dark main .mainCont .main1 .leftCont .client div button {
-                  border-color: white; }
+                  background-color: #FFB200;
+                  color: #3C4048; }
                 main .mainCont .main1 .leftCont .client div button:hover {
                   transform: scale(0.9); }
                 main .mainCont .main1 .leftCont .client div button:active {
-                  border-color: #3C4048;
-                  color: #FFB200; }
+                  background-color: #3C4048;
+                  color: white; }
         main .mainCont .main1 .rigthCont {
           width: 46%;
           display: flex;
@@ -302,24 +305,20 @@ body {
             border-radius: 5px;
             background-color: #033FFF;
             border-style: none;
+            color: white;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 18px;
             transition: 0.2s; }
             body.dark main .mainCont .main2 .rigthCont2 button {
-              background-color: #FFB200; }
+              background-color: #FFB200;
+              color: #3C4048;
+              font-weight: 500; }
             main .mainCont .main2 .rigthCont2 button:hover {
               transform: scale(0.9); }
             main .mainCont .main2 .rigthCont2 button:active {
               background-color: #3C4048;
               color: white; }
-            main .mainCont .main2 .rigthCont2 button a {
-              text-decoration: none;
-              color: white;
-              font-family: 'Poppins';
-              font-weight: 300;
-              font-size: 18px;
-              transition: .2s; }
-              body.dark main .mainCont .main2 .rigthCont2 button a {
-                color: #3C4048;
-                font-weight: 500; }
       main .mainCont .main3 {
         width: 100%;
         height: 50vh;
@@ -408,7 +407,7 @@ body {
           background-position-y: -255px; }
       main .simulatorMainCont .simulatordownerCont {
         width: 100%;
-        height: 150vh; }
+        height: auto; }
         main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
           margin: 15px 0px 15px 0px;
           font-family: 'Poppins';
@@ -605,7 +604,7 @@ body {
           color: #3C4048;
           width: 100%;
           height: 80vh;
-          display: flex;
+          display: none;
           flex-direction: column; }
           main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido {
             margin: 15px 0px;
