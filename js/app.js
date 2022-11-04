@@ -22,6 +22,13 @@ if(localStorage.getItem('dark-mode') == 'true'){
     btnSwitch.classList.remove('active');
 }
 
+//sweet alert
+const btn = document.querySelector('#adqButton')
+console.log(btn)
+btn.addEventListener('click', () => {
+    swal.fire('Llámanos!', 'Contacta a unos de nuestros asesores y pregunta por la mejor tarjeta para ti: (01)205-0505');
+})
+
 //Obj cuentas
 console.log("-------------tipos de cuentas-------------")
 const cuentaAhorro = document.getElementById("prdNameC1")
