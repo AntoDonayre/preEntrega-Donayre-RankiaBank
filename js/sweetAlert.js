@@ -10,7 +10,6 @@ btn.addEventListener('click', () => {
 })
 
 const appBtn = document.querySelector('#appBtn')
-console.log(appBtn)
 appBtn.addEventListener('click', () => {
     swal.fire({
         imageUrl: '/img/RankiaBankApp.png',

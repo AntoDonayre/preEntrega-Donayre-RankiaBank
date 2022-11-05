@@ -1,48 +1,62 @@
-@media screen and (min-width: 1300px){
-    footer{
-        width: 100%;
-        height: 55vh;
+footer{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    .footerCont{
+        padding-top: 18px;
+        width: 90%;
+        height: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        .footerCont{
-            padding-top: 18px;
-            width: 90%;
+        flex-direction: row;
+        justify-content: space-between;
+        .columnsFoot{
+            width: 33%;
             height: 100%;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            .columnsFoot{
-                width: 33%;
-                height: 100%;
+            flex-direction: column;
+            align-items: center;
+            h5{
+                font-family: 'Poppins';
+                font-weight: 500;
+                font-size: 25px;
+                color: $grease;
+                transition: .2s;
+                body.dark & {
+                    color: $white;
+                }
+            }
+            a{
+                margin: 12px;
+                text-decoration: none;
+                font-family: 'Poppins';
+                font-weight: 300;
+                font-size: 17px;
+                transition: 0.2s;
+                color: $grease;
+                body.dark & {
+                    color: $white;
+                    &:hover{
+                        color: $lighMode;
+                    }
+                }
+                &:hover{
+                    color: $blue;
+                }
+                &:active{
+                    color: $lightBlue;
+                }
+            }
+            .ColumnCont{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                h5{
-                    font-family: 'Poppins';
-                    font-weight: 500;
-                    font-size: 25px;
-                    color: $grease;
-                    transition: .2s;
-                    body.dark & {
-                        color: $white;
-                    }
-                }
+                margin-bottom: 25px;
                 a{
-                    margin: 12px;
-                    text-decoration: none;
-                    font-family: 'Poppins';
-                    font-weight: 300;
-                    font-size: 17px;
-                    transition: 0.2s;
                     color: $grease;
-                    body.dark & {
-                        color: $white;
-                        &:hover{
-                            color: $lighMode;
-                        }
-                    }
+                    transition: 0.2s;
                     &:hover{
                         color: $blue;
                     }
@@ -50,14 +64,22 @@
                         color: $lightBlue;
                     }
                 }
-                .ColumnCont{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-bottom: 25px;
+            }
+            .ColumnContRedes{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 25px;
+                div{
                     a{
                         color: $grease;
                         transition: 0.2s;
+                        body.dark & {
+                            color: $white;
+                            &:hover{
+                                color: $lighMode;
+                            }
+                        }
                         &:hover{
                             color: $blue;
                         }
@@ -66,50 +88,26 @@
                         }
                     }
                 }
-                .ColumnContRedes{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-bottom: 25px;
-                    div{
-                        a{
-                            color: $grease;
-                            transition: 0.2s;
-                            body.dark & {
-                                color: $white;
-                                &:hover{
-                                    color: $lighMode;
-                                }
-                            }
+            }
+            .ColumnContApp{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                div{
+                    a{
+                        color: $grease;
+                        transition: 0.2s;
+                        body.dark & {
+                            color: $white;
                             &:hover{
-                                color: $blue;
-                            }
-                            &:active{
-                                color: $lightBlue;
+                                color: $lighMode;
                             }
                         }
-                    }
-                }
-                .ColumnContApp{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    div{
-                        a{
-                            color: $grease;
-                            transition: 0.2s;
-                            body.dark & {
-                                color: $white;
-                                &:hover{
-                                    color: $lighMode;
-                                }
-                            }
-                            &:hover{
-                                color: $blue;
-                            }
-                            &:active{
-                                color: $lightBlue;
-                            }
+                        &:hover{
+                            color: $blue;
+                        }
+                        &:active{
+                            color: $lightBlue;
                         }
                     }
                 }

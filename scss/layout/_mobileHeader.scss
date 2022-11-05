@@ -1,0 +1,45 @@
+@media screen and (max-width: 767px){
+    header{
+        .headerCont{
+            display: grid;
+            grid-template-areas:
+            "burguerIcon brand switchCont";
+            .burguerIcon{
+                grid-area: burguerIcon;
+                width: 41px;
+                height: 41px;
+                display: grid;
+                place-content: center;
+                border-radius: 5px;
+                transition: .2s;
+                .burguerCont{
+                    div{
+                        margin: 5px;
+                        width: 25px;
+                        height: 3px;
+                        background-color: $blue;
+                        border-radius: 1000px;
+                        body.dark & {
+                            background-color: $lighMode;
+                        }
+                    }
+                }
+                &:active{
+                    background-color: rgba($grease, 0.1);
+                }
+            }
+            .brand{
+                grid-area: brand;
+            }
+            .navMenu{
+                display: none;
+            }
+            .searchCont{
+                display: none;
+            }
+            .switchCont{
+                grid-area: switchCont;
+            }
+        }
+    }
+}
