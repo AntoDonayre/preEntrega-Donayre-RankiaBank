@@ -249,6 +249,9 @@ main {
             main .mainCont .main1 .leftCont .client div button {
               width: 132px;
               height: 47px;
+              font-family: 'Poppins';
+              font-size: 15px;
+              font-weight: 300;
               background-color: #033FFF;
               border: none;
               border-radius: 5px;
@@ -916,8 +919,9 @@ footer {
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
-          align-items: flex-start; }
+          align-items: center; }
           main .mainCont .main1 .rigthCont .clientGhost div p {
+            text-align: center;
             padding-bottom: 20px;
             font-family: 'Poppins';
             font-weight: 300;
@@ -927,8 +931,11 @@ footer {
             body.dark main .mainCont .main1 .rigthCont .clientGhost div p {
               color: white; }
           main .mainCont .main1 .rigthCont .clientGhost div button {
-            width: 132px;
-            height: 47px;
+            width: 300px;
+            height: 55px;
+            font-family: 'Poppins';
+            font-size: 18px;
+            font-weight: 300;
             background-color: #033FFF;
             border: none;
             border-radius: 5px;
