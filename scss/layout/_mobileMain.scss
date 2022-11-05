@@ -131,5 +131,128 @@
                 }
             }
         }
+        //Productos
+        .mainPrds{
+            height: auto;
+            .cc1{
+                .cc1a{
+                    height: 220px;
+                    body.dark & {
+                        background-position-y: -70px;
+                    }
+                }
+                .cc1b{
+                    .cc1ba{
+                        font-size: 2em;
+                    }
+                    .cc1bb{
+                        font-size: 1em;
+                    }
+                }
+                .prdsCont{
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    div{
+                        margin: 10px 0px;
+                    }
+                }
+            }
+        }
+        //Simulador
+        .simulatorMainCont{
+            height: auto;
+            .prestamoInmediato{
+                height: 220px;
+                background-position-y: -170px;
+                body.dark & {
+                    background-position-y: -80px;
+                }
+            }
+            .simulatordownerCont{
+                .oddTittle{
+                    h2{
+                        font-size: 2em;
+                    }
+                }
+                .oddDescripction{
+                    p{
+                        font-size: 1em;
+                    }
+                }
+                .lowContainer{
+                    flex-direction: column;
+                    align-items: center;
+                    .leftContSect{
+                        margin: 20px 0px;
+                        width: 90%;
+                        h4{
+                            font-size: 2em;
+                        }
+                        form{
+                            width: 100%;
+                            .oddCont{
+                                width: 100%;
+                            }
+                            div{
+                            width: 100%;
+                               display: flex; 
+                               flex-direction: column;
+                               button{
+                                margin: 3px;
+                                width: 100%;
+                               }
+                            }
+                        }
+                    }
+                    .rigthContSect{
+                        margin: 20px 0px;
+                        width: 90%;
+                        h4{
+                            font-size: 2em;
+                        }
+                        .resultOddJs{
+                            width: 70%;
+                            span{
+                                font-size: 3em;
+                            }
+                        }
+                    }
+                }
+                .downedCont{
+                    height: auto;
+                    .prestSugerido{
+                        h3{
+                            font-size: 2em;
+                            margin-bottom: 50px;
+                        }
+                        .recomendCont{
+                            .prestSugCont{
+                                .montoPR{
+                                    h4{
+                                        font-size: 2.3em;
+                                    }
+                                }
+                                p{
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                    .prest1y2Cont{
+                        flex-direction: column;
+                        .prestSug{
+                            margin: 25px 0px;
+                            h4{
+                                font-size: 2.3em;
+                            }
+                            p{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

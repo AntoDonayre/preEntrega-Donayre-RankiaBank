@@ -984,7 +984,79 @@ footer {
           grid-template-columns: repeat(1, 1fr);
           grid-template-rows: auto; }
           main .mainCont .main3 .main3Cont section .recoClient {
-            width: 90%; } }
+            width: 90%; }
+  main .mainPrds {
+    height: auto; }
+    main .mainPrds .cc1 .cc1a {
+      height: 220px; }
+      body.dark main .mainPrds .cc1 .cc1a {
+        background-position-y: -70px; }
+    main .mainPrds .cc1 .cc1b .cc1ba {
+      font-size: 2em; }
+    main .mainPrds .cc1 .cc1b .cc1bb {
+      font-size: 1em; }
+    main .mainPrds .cc1 .prdsCont {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      main .mainPrds .cc1 .prdsCont div {
+        margin: 10px 0px; }
+  main .simulatorMainCont {
+    height: auto; }
+    main .simulatorMainCont .prestamoInmediato {
+      height: 220px;
+      background-position-y: -170px; }
+      body.dark main .simulatorMainCont .prestamoInmediato {
+        background-position-y: -80px; }
+    main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
+      font-size: 2em; }
+    main .simulatorMainCont .simulatordownerCont .oddDescripction p {
+      font-size: 1em; }
+    main .simulatorMainCont .simulatordownerCont .lowContainer {
+      flex-direction: column;
+      align-items: center; }
+      main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+        margin: 20px 0px;
+        width: 90%; }
+        main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect h4 {
+          font-size: 2em; }
+        main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form {
+          width: 100%; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form .oddCont {
+            width: 100%; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form div {
+            width: 100%;
+            display: flex;
+            flex-direction: column; }
+            main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect form div button {
+              margin: 3px;
+              width: 100%; }
+      main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+        margin: 20px 0px;
+        width: 90%; }
+        main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect h4 {
+          font-size: 2em; }
+        main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs {
+          width: 70%; }
+          main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect .resultOddJs span {
+            font-size: 3em; }
+    main .simulatorMainCont .simulatordownerCont .downedCont {
+      height: auto; }
+      main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido h3 {
+        font-size: 2em;
+        margin-bottom: 50px; }
+      main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido .recomendCont .prestSugCont .montoPR h4 {
+        font-size: 2.3em; }
+      main .simulatorMainCont .simulatordownerCont .downedCont .prestSugerido .recomendCont .prestSugCont p {
+        font-size: 1em; }
+      main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont {
+        flex-direction: column; }
+        main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont .prestSug {
+          margin: 25px 0px; }
+          main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont .prestSug h4 {
+            font-size: 2.3em; }
+          main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont .prestSug p {
+            font-size: 1em; } }
 
 @media screen and (max-width: 767px) {
   footer .footerCont {
