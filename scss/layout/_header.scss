@@ -11,6 +11,52 @@ header{
     body.dark & {
         background-color: $grease;
     }
+    .navMenuMobileCont{
+        display: none;
+        position: absolute;
+        font-family: 'Poppins';
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(black, 0.8);
+        z-index: 2;
+        .navMenuMobile{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            height: 100vh;
+            background-color: $white;
+            padding: 10px 20px;
+            z-index: 3;
+            .closeMenu{
+                background-color: transparent;
+                border: none;
+                border-radius: 5px;
+                font-family: 'Poppins';
+                font-size: 30px;
+                width: 10%;
+                padding: 0px 5px;
+                margin: 5px 0px;
+                display: flex;
+                justify-content: flex-start;
+                color: $grease;
+                cursor: pointer;
+                &:active{
+                    background-color: rgba($grease, 0.1);
+                }
+            }
+            .aMenuM{
+                color: $lightGrease;
+                font-size: 17px;
+                font-weight: 300;
+                text-decoration: none;
+                margin: 10px 0px;
+                &:active{
+                    background-color: rgba($grease, 0.1);
+                    color: $blue;
+                }
+            }
+        }
+    }
     .headerCont{
         width: 90%;
         height: 100%;

@@ -18,46 +18,6 @@ body {
       border-color: #B2B2B2; }
     body .bodyCont .downQuery {
       margin: 20px 0px; }
-  body .navMenuMobileCont {
-    display: none;
-    position: absolute;
-    font-family: 'Poppins';
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 2; }
-    body .navMenuMobileCont .navMenuMobile {
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-      height: 100vh;
-      background-color: white;
-      padding: 10px 20px;
-      z-index: 3; }
-      body .navMenuMobileCont .navMenuMobile .closeMenu {
-        background-color: transparent;
-        border: none;
-        border-radius: 5px;
-        font-family: 'Poppins';
-        font-size: 30px;
-        width: 10%;
-        padding: 0px 5px;
-        margin: 5px 0px;
-        display: flex;
-        justify-content: flex-start;
-        color: #3C4048;
-        cursor: pointer; }
-        body .navMenuMobileCont .navMenuMobile .closeMenu:active {
-          background-color: rgba(60, 64, 72, 0.1); }
-      body .navMenuMobileCont .navMenuMobile .aMenuM {
-        color: #B2B2B2;
-        font-size: 17px;
-        font-weight: 300;
-        text-decoration: none;
-        margin: 10px 0px; }
-        body .navMenuMobileCont .navMenuMobile .aMenuM:active {
-          background-color: rgba(60, 64, 72, 0.1);
-          color: #033FFF; }
   @media screen and (max-width: 767px) {
     body .navMenuMobileCont {
       display: none;
@@ -78,6 +38,46 @@ header {
   transition: .2s; }
   body.dark header {
     background-color: #3C4048; }
+  header .navMenuMobileCont {
+    display: none;
+    position: absolute;
+    font-family: 'Poppins';
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2; }
+    header .navMenuMobileCont .navMenuMobile {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      height: 100vh;
+      background-color: white;
+      padding: 10px 20px;
+      z-index: 3; }
+      header .navMenuMobileCont .navMenuMobile .closeMenu {
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Poppins';
+        font-size: 30px;
+        width: 10%;
+        padding: 0px 5px;
+        margin: 5px 0px;
+        display: flex;
+        justify-content: flex-start;
+        color: #3C4048;
+        cursor: pointer; }
+        header .navMenuMobileCont .navMenuMobile .closeMenu:active {
+          background-color: rgba(60, 64, 72, 0.1); }
+      header .navMenuMobileCont .navMenuMobile .aMenuM {
+        color: #B2B2B2;
+        font-size: 17px;
+        font-weight: 300;
+        text-decoration: none;
+        margin: 10px 0px; }
+        header .navMenuMobileCont .navMenuMobile .aMenuM:active {
+          background-color: rgba(60, 64, 72, 0.1);
+          color: #033FFF; }
   header .headerCont {
     width: 90%;
     height: 100%;
