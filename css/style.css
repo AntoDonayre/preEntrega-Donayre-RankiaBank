@@ -18,7 +18,7 @@ body {
       border-color: #B2B2B2; }
     body .bodyCont .downQuery {
       margin: 20px 0px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1200px) {
     body .navMenuMobileCont {
       display: none;
       z-index: 3; }
@@ -54,12 +54,15 @@ header {
       background-color: white;
       padding: 10px 20px;
       z-index: 3; }
+      body.dark header .navMenuMobileCont .navMenuMobile {
+        background-color: #3C4048; }
       header .navMenuMobileCont .navMenuMobile .closeMenu {
         background-color: transparent;
         border: none;
         border-radius: 5px;
         font-family: 'Poppins';
         font-size: 30px;
+        font-weight: 300;
         width: 10%;
         padding: 0px 5px;
         margin: 5px 0px;
@@ -69,6 +72,10 @@ header {
         cursor: pointer; }
         header .navMenuMobileCont .navMenuMobile .closeMenu:active {
           background-color: rgba(60, 64, 72, 0.1); }
+        body.dark header .navMenuMobileCont .navMenuMobile .closeMenu {
+          color: #FFB200; }
+          body.dark header .navMenuMobileCont .navMenuMobile .closeMenu:active {
+            color: white; }
       header .navMenuMobileCont .navMenuMobile .aMenuM {
         color: #B2B2B2;
         font-size: 17px;
@@ -78,6 +85,10 @@ header {
         header .navMenuMobileCont .navMenuMobile .aMenuM:active {
           background-color: rgba(60, 64, 72, 0.1);
           color: #033FFF; }
+        body.dark header .navMenuMobileCont .navMenuMobile .aMenuM {
+          color: #FFB200; }
+          body.dark header .navMenuMobileCont .navMenuMobile .aMenuM:active {
+            color: white; }
   header .headerCont {
     width: 90%;
     height: 100%;
@@ -403,6 +414,7 @@ main {
           place-items: center;
           gap: 12px; }
           main .mainCont .main3 .main3Cont section .recoClient {
+            padding: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -861,7 +873,7 @@ footer {
           footer .footerCont .columnsFoot .ColumnContApp div a:active {
             color: rgba(3, 63, 255, 0.09); }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   header .headerCont {
     display: grid;
     grid-template-areas: "burguerIcon brand switchCont"; }
@@ -872,6 +884,7 @@ footer {
       display: grid;
       place-content: center;
       border-radius: 5px;
+      cursor: pointer;
       transition: .2s; }
       header .headerCont .burguerIcon .burguerCont div {
         margin: 5px;
@@ -892,7 +905,7 @@ footer {
     header .headerCont .switchCont {
       grid-area: switchCont; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   main .mainCont {
     width: 100%; }
     main .mainCont .main1 {
@@ -1064,7 +1077,19 @@ footer {
           main .simulatorMainCont .simulatordownerCont .downedCont .prest1y2Cont .prestSug p {
             font-size: 1em; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  main .mainCont .main1 .leftCont .slogan h3 {
+    font-size: 3em; }
+  main .mainCont .main2 .rigthCont2 .slogan2 {
+    font-size: 3em; }
+  main .mainCont .main2 .rigthCont2 p {
+    font-size: 1.2em; }
+  main .simulatorMainCont .simulatordownerCont .lowContainer .leftContSect {
+    width: 40%; }
+  main .simulatorMainCont .simulatordownerCont .lowContainer .rigthContSect {
+    width: 40%; } }
+
+@media screen and (max-width: 1200px) {
   footer .footerCont {
     flex-direction: column; }
     footer .footerCont .columnsFoot {

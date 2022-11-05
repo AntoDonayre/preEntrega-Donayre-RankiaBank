@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1200px){
     header{
         .headerCont{
             display: grid;
@@ -11,6 +11,7 @@
                 display: grid;
                 place-content: center;
                 border-radius: 5px;
+                cursor: pointer;
                 transition: .2s;
                 .burguerCont{
                     div{

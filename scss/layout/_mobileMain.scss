@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px){
+@media screen and (max-width: 1200px){
     main{
         .mainCont{
             width: 100%;
@@ -252,6 +252,43 @@
                                 font-size: 1em;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px) and (max-width:1500px){
+    main{
+        .mainCont{
+            .main1{
+                .leftCont{
+                    .slogan{
+                        h3{
+                            font-size: 3em;
+                        }
+                    }
+                }
+            }
+            .main2{
+                .rigthCont2{
+                    .slogan2{
+                        font-size: 3em;
+                    }
+                    p{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        .simulatorMainCont{
+            .simulatordownerCont{
+                .lowContainer{
+                    .leftContSect{
+                        width: 40%;
+                    }
+                    .rigthContSect{
+                        width: 40%;
                     }
                 }
             }

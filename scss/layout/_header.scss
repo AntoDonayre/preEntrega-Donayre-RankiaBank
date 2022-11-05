@@ -27,12 +27,16 @@ header{
             background-color: $white;
             padding: 10px 20px;
             z-index: 3;
+            body.dark & {
+                background-color: $grease;
+            }
             .closeMenu{
                 background-color: transparent;
                 border: none;
                 border-radius: 5px;
                 font-family: 'Poppins';
                 font-size: 30px;
+                font-weight: 300;
                 width: 10%;
                 padding: 0px 5px;
                 margin: 5px 0px;
@@ -42,6 +46,12 @@ header{
                 cursor: pointer;
                 &:active{
                     background-color: rgba($grease, 0.1);
+                }
+                body.dark & {
+                    color: $lighMode;
+                    &:active{
+                        color: $white;
+                    }
                 }
             }
             .aMenuM{
@@ -53,6 +63,12 @@ header{
                 &:active{
                     background-color: rgba($grease, 0.1);
                     color: $blue;
+                }
+                body.dark & {
+                    color: $lighMode;
+                    &:active{
+                        color: $white;
+                    }
                 }
             }
         }
