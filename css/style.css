@@ -60,7 +60,8 @@ body {
           color: #033FFF; }
   @media screen and (max-width: 767px) {
     body .navMenuMobileCont {
-      display: none; } }
+      display: none;
+      z-index: 3; } }
 
 header {
   width: 100%;
