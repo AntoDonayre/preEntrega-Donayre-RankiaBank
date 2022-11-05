@@ -8,6 +8,16 @@ btn.addEventListener('click', () => {
         confirmButtonColor: '#033FFF',
     });
 })
+const btn1 = document.querySelector('#adqButton1')
+btn1.addEventListener('click', () => {
+    swal.fire({
+        title:'Llámanos!',
+        text:'Contacta a unos de nuestros asesores y pregunta por la mejor tarjeta para ti.',
+        confirmButtonText: '(01) 205-0505',
+        confirmButtonColor: '#033FFF',
+    });
+})
+
 
 const appBtn = document.querySelector('#appBtn')
 appBtn.addEventListener('click', () => {

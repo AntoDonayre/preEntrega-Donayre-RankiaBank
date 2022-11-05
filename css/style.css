@@ -883,3 +883,106 @@ footer {
       display: none; }
     header .headerCont .switchCont {
       grid-area: switchCont; } }
+
+@media screen and (max-width: 767px) {
+  main .mainCont {
+    width: 100%; }
+    main .mainCont .main1 {
+      padding: 50px 0px;
+      width: 100%;
+      height: auto;
+      background-color: rgba(3, 63, 255, 0.09);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      main .mainCont .main1 .leftCont {
+        width: 90%; }
+        main .mainCont .main1 .leftCont .slogan h3 {
+          text-align: center;
+          font-size: 2em; }
+        main .mainCont .main1 .leftCont .client {
+          display: none; }
+      main .mainCont .main1 .rigthCont .backCardTarget {
+        display: none; }
+      main .mainCont .main1 .rigthCont .clientGhost {
+        padding-top: 25px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center; }
+        main .mainCont .main1 .rigthCont .clientGhost div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start; }
+          main .mainCont .main1 .rigthCont .clientGhost div p {
+            padding-bottom: 20px;
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 1em;
+            color: #3C4048;
+            transition: .2s; }
+            body.dark main .mainCont .main1 .rigthCont .clientGhost div p {
+              color: white; }
+          main .mainCont .main1 .rigthCont .clientGhost div button {
+            width: 132px;
+            height: 47px;
+            background-color: #033FFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            transition: 0.2s; }
+            body.dark main .mainCont .main1 .rigthCont .clientGhost div button {
+              background-color: #FFB200;
+              color: #3C4048; }
+            main .mainCont .main1 .rigthCont .clientGhost div button:hover {
+              transform: scale(0.9); }
+            main .mainCont .main1 .rigthCont .clientGhost div button:active {
+              background-color: #3C4048;
+              color: white; }
+    main .mainCont .main2 {
+      padding: 50px 0px;
+      height: auto;
+      display: grid;
+      justify-items: center;
+      grid-template-areas: "rigthCont2"  "leftCont2"; }
+      main .mainCont .main2 .leftCont2 {
+        width: 90%;
+        grid-area: leftCont2;
+        align-items: center; }
+        main .mainCont .main2 .leftCont2 div img {
+          width: 224px; }
+        main .mainCont .main2 .leftCont2 .backCardTarget2 {
+          display: none; }
+      main .mainCont .main2 .rigthCont2 {
+        padding: 25px 0px;
+        align-items: center;
+        width: 90%;
+        grid-area: rigthCont2; }
+        main .mainCont .main2 .rigthCont2 .slogan2 {
+          font-size: 2em;
+          text-align: center; }
+        main .mainCont .main2 .rigthCont2 p {
+          font-size: 1em;
+          text-align: center; }
+    main .mainCont .main3 {
+      padding: 50px 0px; }
+      main .mainCont .main3 .main3Cont {
+        width: 90%; }
+        main .mainCont .main3 .main3Cont h4 {
+          font-size: 2em; }
+        main .mainCont .main3 .main3Cont section {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: auto; }
+          main .mainCont .main3 .main3Cont section .recoClient {
+            width: 90%; } }
+
+@media screen and (max-width: 767px) {
+  footer .footerCont {
+    flex-direction: column; }
+    footer .footerCont .columnsFoot {
+      padding: 20px 0px;
+      width: 100%;
+      text-align: center; } }

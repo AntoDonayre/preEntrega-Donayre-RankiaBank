@@ -1,1 +1,12 @@
-@media screen and (max-width: 767px){}
+@media screen and (max-width: 767px){
+    footer{
+        .footerCont{
+            flex-direction: column;
+            .columnsFoot{
+                padding: 20px 0px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
