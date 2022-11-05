@@ -61,7 +61,10 @@ body {
   @media screen and (max-width: 767px) {
     body .navMenuMobileCont {
       display: none;
-      z-index: 3; } }
+      z-index: 3; }
+      body .navMenuMobileCont .navMenuMobile {
+        transform: translateX(-100%);
+        display: flex; } }
 
 header {
   width: 100%;

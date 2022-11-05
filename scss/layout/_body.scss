@@ -71,6 +71,10 @@ body{
         .navMenuMobileCont{
             display: none;
             z-index: 3;
+            .navMenuMobile{
+                transform: translateX(-100%);
+                display: flex;
+            }
         }
     }
 }
