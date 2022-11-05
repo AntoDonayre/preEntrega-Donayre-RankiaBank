@@ -10,6 +10,9 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-around;
+                body.dark & {
+                    background-color: transparent;
+                }
                 .leftCont{
                     width: 90%;
                     .slogan{
