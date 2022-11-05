@@ -22,6 +22,17 @@ if(localStorage.getItem('dark-mode') == 'true'){
     btnSwitch.classList.remove('active');
 }
 
+//burguer menu
+const burguerMenu = document.querySelector('#burguerIcon')
+burguerMenu.addEventListener('click', () => {
+    document.querySelector('#navMenuMobileCont').style.display = "block"
+})
+
+const closeBurguer = document.querySelector('#closeMenu')
+closeBurguer.addEventListener('click', () => {
+    document.querySelector('#navMenuMobileCont').style.display = "none"
+})
+
 // Simulador de cuotas //
 console.log("---simulador de cuotas con DOM, visualizado en HTML (simulador de cuotas page)---")
 
