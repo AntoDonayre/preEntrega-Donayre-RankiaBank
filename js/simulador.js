@@ -26,11 +26,25 @@ if(localStorage.getItem('dark-mode') == 'true'){
 const burguerMenu = document.querySelector('#burguerIcon')
 burguerMenu.addEventListener('click', () => {
     document.querySelector('#navMenuMobileCont').style.display = "block"
+    const promBurguerMenu = new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            resolve(
+                document.querySelector('#navMenuMobile').style.transform = "translateX(0%)",
+                document.querySelector('#navMenuMobile').style.transition = "1s")
+        }, 100)
+    })
 })
 
 const closeBurguer = document.querySelector('#closeMenu')
 closeBurguer.addEventListener('click', () => {
     document.querySelector('#navMenuMobileCont').style.display = "none"
+    const promBurguerMenu1 = new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            resolve(
+                document.querySelector('#navMenuMobile').style.transform = "translateX(-100%)",
+                document.querySelector('#navMenuMobile').style.transition = "1s")
+        }, 100)
+    })
 })
 
 // Simulador de cuotas //
