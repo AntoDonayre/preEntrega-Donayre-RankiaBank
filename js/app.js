@@ -25,7 +25,8 @@ if(localStorage.getItem('dark-mode') == 'true'){
 //burguer menu
 const burguerMenu = document.querySelector('#burguerIcon')
 burguerMenu.addEventListener('click', () => {
-    document.querySelector('#navMenuMobileCont').style.display = "block"
+    document.querySelector('#navMenuMobileCont').style.display = "block",
+    document.querySelector('#navMenuMobile').style.display = "flex"
     const promBurguerMenu = new Promise ((resolve, reject) => {
         setTimeout(() => {
             resolve(
@@ -37,12 +38,13 @@ burguerMenu.addEventListener('click', () => {
 
 const closeBurguer = document.querySelector('#closeMenu')
 closeBurguer.addEventListener('click', () => {
-    document.querySelector('#navMenuMobileCont').style.display = "none"
+    document.querySelector('#navMenuMobile').style.transform = "translateX(-100%)",
+    document.querySelector('#navMenuMobileCont').style.transition = "1s"
     const promBurguerMenu1 = new Promise ((resolve, reject) => {
         setTimeout(() => {
             resolve(
-                document.querySelector('#navMenuMobile').style.transform = "translateX(-100%)",
-                document.querySelector('#navMenuMobile').style.transition = "1s")
-        }, 100)
+                document.querySelector('#navMenuMobile').style.display = "none",
+                document.querySelector('#navMenuMobileCont').style.display = "none")
+        }, 1000)
     })
 })
