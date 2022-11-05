@@ -425,17 +425,17 @@ main {
     height: auto; }
     main .simulatorMainCont .prestamoInmediato {
       width: 100%;
-      height: 420px;
+      height: 45vh;
       background-image: url(/img/papaYbebe.webp);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position-y: -320px;
+      background-position-y: center;
       background-position-x: center;
       border-radius: 0px 0px 18px 18px;
       transition: .2s; }
       body.dark main .simulatorMainCont .prestamoInmediato {
         background-image: url(/img/casaNueva.webp);
-        background-position-y: -255px; }
+        background-position-y: center; }
     main .simulatorMainCont .simulatordownerCont {
       width: 100%;
       height: auto; }
@@ -708,16 +708,16 @@ main {
     height: 100vh; }
     main .mainPrds .cc1 .cc1a {
       width: 100%;
-      height: 420px;
+      height: 45vh;
       background-image: url(/img/girl.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position-y: -50px;
+      background-position-y: center;
       border-radius: 0px 0px 18px 18px;
       transition: .2s; }
       body.dark main .mainPrds .cc1 .cc1a {
         background-image: url(/img/womenCreditCard.jpg);
-        background-position-y: -110px; }
+        background-position-y: center; }
     main .mainPrds .cc1 .cc1b .cc1ba {
       text-align: center;
       font-family: 'Poppins';
@@ -995,9 +995,9 @@ footer {
   main .mainPrds {
     height: auto; }
     main .mainPrds .cc1 .cc1a {
-      height: 220px; }
+      height: 20vh; }
       body.dark main .mainPrds .cc1 .cc1a {
-        background-position-y: -70px; }
+        background-position-y: center; }
     main .mainPrds .cc1 .cc1b .cc1ba {
       font-size: 2em; }
     main .mainPrds .cc1 .cc1b .cc1bb {
@@ -1011,10 +1011,9 @@ footer {
   main .simulatorMainCont {
     height: auto; }
     main .simulatorMainCont .prestamoInmediato {
-      height: 220px;
-      background-position-y: -170px; }
+      height: 20vh; }
       body.dark main .simulatorMainCont .prestamoInmediato {
-        background-position-y: -80px; }
+        background-position-y: center; }
     main .simulatorMainCont .simulatordownerCont .oddTittle h2 {
       font-size: 2em; }
     main .simulatorMainCont .simulatordownerCont .oddDescripction p {

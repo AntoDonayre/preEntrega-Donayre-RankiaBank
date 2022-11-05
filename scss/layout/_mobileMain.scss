@@ -139,9 +139,9 @@
             height: auto;
             .cc1{
                 .cc1a{
-                    height: 220px;
+                    height: 20vh;
                     body.dark & {
-                        background-position-y: -70px;
+                        background-position-y: center;
                     }
                 }
                 .cc1b{
@@ -166,10 +166,9 @@
         .simulatorMainCont{
             height: auto;
             .prestamoInmediato{
-                height: 220px;
-                background-position-y: -170px;
+                height: 20vh;
                 body.dark & {
-                    background-position-y: -80px;
+                    background-position-y: center;
                 }
             }
             .simulatordownerCont{

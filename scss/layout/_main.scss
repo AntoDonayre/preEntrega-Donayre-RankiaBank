@@ -285,17 +285,17 @@ main{
         height: auto;
         .prestamoInmediato{
             width: 100%;
-            height: 420px;
+            height: 45vh;
             background-image: url(/img/papaYbebe.webp);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position-y: -320px;
+            background-position-y: center;
             background-position-x: center;
             border-radius: 0px 0px 18px 18px;
             transition: .2s;
             body.dark & {
                 background-image: url(/img/casaNueva.webp);
-                background-position-y: -255px;
+                background-position-y: center;
             }
         }
         .simulatordownerCont{
@@ -631,16 +631,16 @@ main{
         .cc1{
             .cc1a{
                 width: 100%;
-                height: 420px;
+                height: 45vh;
                 background-image: url(/img/girl.jpg);
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position-y: -50px;
+                background-position-y: center;
                 border-radius: 0px 0px 18px 18px;
                 transition: .2s;
                 body.dark & {
                     background-image: url(/img/womenCreditCard.jpg);
-                    background-position-y: -110px;
+                    background-position-y: center;
                 }
             }
             .cc1b{
