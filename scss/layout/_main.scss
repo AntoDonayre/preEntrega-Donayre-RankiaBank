@@ -13,7 +13,7 @@ main{
             width: 100%;
             height: 90vh;
             .leftCont{
-                width: 51%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -94,17 +94,19 @@ main{
                 }
             }
             .rigthCont{
-                width: 46%;
+                width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-end;
-                img{
-                    width: 100%;
+                div{
                     z-index: 1;
-                    transition: 0.2s;
-                    &:hover{
-                        transform: rotate(10deg);
+                    img{
+                        width: 100%;
+                        transition: 0.2s;
+                        &:hover{
+                            transform: rotate(10deg);
+                        }
                     }
                 }
                 .backCardTarget{
@@ -114,7 +116,7 @@ main{
                     top: 365px;
                     width: 73%;
                     height: 40%;
-                    z-index: 0;
+                    z-index: -1;
                     background-color: $lightBlue;
                     transition: .2s;
                     body.dark & {
